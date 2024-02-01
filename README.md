@@ -2,8 +2,8 @@
 
 ### Team Members
 
-Bruce Estivil
-Lucas Hsing
-Chengcheng Wang
-Sanyukta Khedekar
-Yu-Hsien Wu
+Bruce Estivil <br>
+Lucas Hsing <br>
+Chengcheng Wang <br>
+Sanyukta Khedekar <br>
+Yu-Hsien Wu <br>
