@@ -50,4 +50,6 @@ Yes, hand-drawn sketches. Figma version completed before game development.
 
 ### How the player will play the game?
 
-Player gets word in local language and has to find the match in English. Game has a word bank, and with each level the time to selected the game is shorter.
+Player gets word in local language and has to find the match in English. Game has a word bank, and with each level the time to selected the game is shorter. Uses the keyboard to selected the word. Similar to the example image shown below.
+
+![Spaceship Based Word Association Game](image.png)
