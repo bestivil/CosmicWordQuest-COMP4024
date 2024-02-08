@@ -20,7 +20,18 @@
 
 ### <b>Have you got sketches for a game?</b>
 
-Yes, hand-drawn sketches. Figma version completed before game development.
+Hand Drawn sketches (by Sanyukta)
+
+Sketch 1
+![Sketch 1](<../Week 1/Sketch 1.jpg>)
+Sketch 2
+![Sketch 2](<../Week 1/Sketch 2.jpg>)
+Sketch 3
+![Sketch 2](<../Week 1/Sketch 3.jpg>)
+
+We decided to continue with sketch 1, and collaboratively created Figma high-fidelity prototype.
+
+![Figma_High](<../Week 1/High Fidelity img.png>)
 
 ### <b>Have you thought about the user?</b>
 
