@@ -2,15 +2,14 @@
 
 <b>Have you got to know your team members in terms of their skills, experience, personality types?</b>
 
-| Name        | Skills                     | Experience                                                                                       | Personality Types | Roles                     |
-| ----------- | -------------------------- | ------------------------------------------------------------------------------------------------ | ----------------- | ------------------------- |
-| Bruce       | Coding, Project Management | coded extensively in (Python, C, JavaScript) etc. / Worked in team project in 2nd Yr (full SDLC) |                   | Co-ordinator, Implementor |
-| Lucas Hsing |                            |                                                                                                  |                   | Shaper                    |
-| Lucas       |                            |                                                                                                  |                   | Team Worker               |
-| Sanyukta    |                            |                                                                                                  |                   | Team Worker, Finisher     |
-| Yu-Hsien    |                            |                                                                                                  |                   |                           |
-| Rodion      |                            |                                                                                                  |                   | Implementor               |
-
+| Name        | Skills                                      | Experience                                                                                                           | Personality Types | Roles                     |
+|-------------|---------------------------------------------|----------------------------------------------------------------------------------------------------------------------|-------------------|---------------------------|
+| Bruce       | Coding, Project Management                  | coded extensively in (Python, C, JavaScript) etc. / Worked in team project in 2nd Yr (full SDLC)                     |                   | Co-ordinator, Implementor |
+| Lucas Hsing |                                             |                                                                                                                      |                   | Shaper                    |
+| Lucas       |                                             |                                                                                                                      |                   | Team Worker               |
+| Sanyukta    | Design , Interface designer and researcher  | Designing and prototyping interfaces .Worked as an user interface designer and researcher professionally for 2 years |                   | Team Worker, Finisher     |
+| Yu-Hsien    |                                             |                                                                                                                      |                   |                           |
+| Rodion      |                                             |                                                                                                                      |                   | Implementor               |
 ### <b> Learning Outcomes (What/Why/How) </b>
 
 
