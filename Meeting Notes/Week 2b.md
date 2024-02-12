@@ -8,7 +8,7 @@
 | Lucas Hsing | Market Research, Psychology, and Consulting| Junior level coding in (Python,Java, Javascript)| Shaper                    |
 | Lucas       |                                             |                                                                                                                      | Team Worker               |
 | Sanyukta    | Design , Interface designer and researcher  | Designing and prototyping interfaces .Worked as an user interface designer and researcher professionally for 2 years | Team Worker, Finisher     |
-| Yu-Hsien    |                                             |                                                                                                                      |Insert Here                   |
+| Yu-Hsien    |  Coding, psychology, knowledge management, media                                           |   C++(basic)                                                                                                                   |Monitor / Evaluator                   |
 | Rodion      | Coding, Software engineering                | Coded mainly in (Python,Java,C,TS/JS) etc. Worked in 2 group projects in CS degree and had internship                | Implementer, Shaper       |                                                                           | Implementor               |
 ### <b> Learning Outcomes (What/Why/How) </b>
 
