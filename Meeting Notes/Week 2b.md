@@ -11,7 +11,7 @@
 | Yu-Hsien    |                            |                                                                                                  |                   |                           |
 | Rodion      |                            |                                                                                                  |                   | Implementor               |
 
-### <b> Learning Outcomes (What/Why/How) <b>
+### <b> Learning Outcomes (What/Why/How) </b>
 
 
 The user will learn basic english words related to conversation and daily use.
