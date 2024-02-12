@@ -11,6 +11,22 @@
 | Yu-Hsien    |                            |                                                                                                  |                   |                           |
 | Rodion      |                            |                                                                                                  |                   | Implementor               |
 
+### <b> Learning Outcomes (What/Why/How) <b>
+
+
+The user will learn basic english words related to conversation and daily use.
+ - Many individuals seek tools that aid in language acquisition of basic english
+ - The words are learned by word association through a selection game where the user is given a word in their native language and then must choose the correct corresponding english word
+
+The user will refine their comprehension skills by accurately selecting the most appropriate english word corresponding to the given word in their native language
+ - This reinforces their understanding of language and improves their ability to interpret and respond effectively in communication contexts. 
+ - This is achieved through iterative gameplay sessions where users encounter various word pairs to increase vocabulary retention
+
+The user will gradually improve their associations with their native language and the correct english word 
+ - In addition to learning, it’s important for users learning a new language to create mental associations with words to improve retention and recall
+ - Through the process of trial and error in the game the user will improve the association with their native language and english. Overall this facilitates long-term retention of vocabulary. A feedback mechanic where the definition of an incorrect and correct choice may be given to provide users with immediate guidance and feedback as well.
+
+
 <b>Have you set up a Kanban board with tasks? </b>
 <b>Have you allocated team roles?</b>
 <b>Have you decided on your Minimum Viable Product?</b>
