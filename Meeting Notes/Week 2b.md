@@ -29,5 +29,49 @@ The user will gradually improve their associations with their native language an
 <b>Have you set up a Kanban board with tasks? </b>
 <b>Have you allocated team roles?</b>
 <b>Have you decided on your Minimum Viable Product?</b>
+-Minimum Viable Product (MVP) outline for the language learning game:
+
+Objective: Learn and match English words to the Chinese/French/Hindi counterparts by shooting down planets with the correct translation.
+
+Features Across 10 Levels:
+
+Level 1:
+Displaying the game's title prominently.
+Including an appealing visual design.
+Addition of a start button that initiates the transition to the gameplay screen
+Level 2:
+Creating an engaging space scene with visually appealing planets.
+Designing of a spaceship at the bottom that is easily recognizable.
+The current level or the round will be clearly displayed
+The Chinese/French word will be prominently shown at the top.
+Level 3:
+The objective should be clearly communicated  to the player: shoot the correct English-named planet.
+Providing an intuitive visual cue for the target planet.
+Level 4:
+Allows left and right movement for the spaceship.
+Integrate a shoot button for firing.
+Level 5:
+Creating visually appealing explosions when a planet is hit.
+Ensuring a smooth transition and animation for the destruction of planets.
+Level 6 :
+Implementing a system to verify if the player hits the correct planet.
+Award points for correct hits.
+A visual or auditory confirmation for correct answers will be provided 
+Level 7:
+Incorporating a timer per round or consider implementing levels.
+Increasing difficulty over time by speeding up planet movement or introducing more planets.
+Level 8:
+Displaying the player's score prominently on the screen.
+Considerations of adding a high-score feature.
+Level 9:
+Implementing a game-over screen triggered by completing a certain number of rounds or running out of time.
+Providing feedback on the player's performance, such as the number of correct hits.
+Level 10:
+A positive feedback for correct answers will be provided , like celebratory animations or sounds.
+Encouraging players to try again for incorrect answers, possibly providing hints or educational feedback.
+By focusing on these features, we can create a well-rounded language learning game that is not only educational but also enjoyable and engaging for your target audience.
+
+
+
 <b>Have you begun to write some simple tests and code?</b>
 <b>Do you have a plan for what you are going to do by next week?</b>
