@@ -63,6 +63,7 @@
     <Compile Include="Assets/Code/BulletUpDown.cs" />
     <Compile Include="Assets/Code/SpaceshipLeftRight.cs" />
     <Compile Include="Assets/Code/CollisionScoring.cs" />
+    <Compile Include="Assets/Code/LoadStartGame.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Code/GameLogic.asmdef" />
