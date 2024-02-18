@@ -22,5 +22,6 @@ public class SpaceshipLeftRight : MonoBehaviour
             transform.Translate(Vector3.down * moveSpeed * Time.deltaTime);
         }
        
+       
     }
 }
