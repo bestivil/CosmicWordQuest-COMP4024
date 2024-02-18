@@ -64,6 +64,7 @@
     <Compile Include="Assets/Code/SpaceshipLeftRight.cs" />
     <Compile Include="Assets/Code/CollisionScoring.cs" />
     <Compile Include="Assets/Code/LoadStartGame.cs" />
+    <Compile Include="Assets/Code/LoadMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Code/GameLogic.asmdef" />
