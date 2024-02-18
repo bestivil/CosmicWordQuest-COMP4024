@@ -9,6 +9,8 @@ TagManager:
   - Planet3
   - Planet4
   - Planet5
+  - ScoreText
+  - StartButton
   layers:
   - Default
   - TransparentFX
