@@ -11,6 +11,7 @@ TagManager:
   - Planet5
   - ScoreText
   - StartButton
+  - BackButton
   layers:
   - Default
   - TransparentFX
