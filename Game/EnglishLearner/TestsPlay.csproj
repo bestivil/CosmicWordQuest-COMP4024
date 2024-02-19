@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Tests/TestsPlay/SpaceshipTests.cs" />
+    <Compile Include="Assets/Tests/TestsPlay/Bullet-x-cord.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Tests/TestsPlay/TestsPlay.asmdef" />
