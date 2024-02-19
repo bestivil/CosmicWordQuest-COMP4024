@@ -7,3 +7,4 @@ Lucas Hsing <br>
 Chengcheng Wang <br>
 Sanyukta Khedekar <br>
 Yu-Hsien Wu <br>
+Rodion Rasulov

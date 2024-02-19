@@ -1,0 +1,12 @@
+{
+    "name": "TestsPlay",
+    "references": [
+    "GameLogic"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ]
+}

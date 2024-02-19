@@ -1,0 +1,12 @@
+{
+    "name": "TestsEdit",
+    "references": [
+    "GameLogic"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ]
+}

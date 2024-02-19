@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameLogic", "GameLogic.csproj", "{010F8D71-001F-6530-10BB-46C1913BCAFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{0E7A593F-D1CE-1905-579B-8C9544CE1C3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestsPlay", "TestsPlay.csproj", "{86BF75D4-172C-79D3-8499-515C9A74D83F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{010F8D71-001F-6530-10BB-46C1913BCAFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{010F8D71-001F-6530-10BB-46C1913BCAFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{010F8D71-001F-6530-10BB-46C1913BCAFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{010F8D71-001F-6530-10BB-46C1913BCAFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E7A593F-D1CE-1905-579B-8C9544CE1C3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E7A593F-D1CE-1905-579B-8C9544CE1C3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E7A593F-D1CE-1905-579B-8C9544CE1C3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E7A593F-D1CE-1905-579B-8C9544CE1C3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86BF75D4-172C-79D3-8499-515C9A74D83F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86BF75D4-172C-79D3-8499-515C9A74D83F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86BF75D4-172C-79D3-8499-515C9A74D83F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86BF75D4-172C-79D3-8499-515C9A74D83F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
