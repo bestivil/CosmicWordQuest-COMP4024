@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{010F8D71-001F-6530-10BB-46C1913BCAFF}</ProjectGuid>
+    <ProjectGuid>{EE99E3F8-B412-9117-F32D-43E242EFAAD5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>GameLogic</AssemblyName>

@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{0E7A593F-D1CE-1905-579B-8C9544CE1C3B}</ProjectGuid>
+    <ProjectGuid>{6D353E9C-07A2-015E-2E91-CACC9A1614DF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -1134,7 +1134,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="GameLogic.csproj">
-      <Project>{010F8D71-001F-6530-10BB-46C1913BCAFF}</Project>
+      <Project>{EE99E3F8-B412-9117-F32D-43E242EFAAD5}</Project>
       <Name>GameLogic</Name>
     </ProjectReference>
   </ItemGroup>

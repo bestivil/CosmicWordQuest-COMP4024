@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{86BF75D4-172C-79D3-8499-515C9A74D83F}</ProjectGuid>
+    <ProjectGuid>{2234EEB5-2C2A-270C-FC90-734654A8D0AB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>TestsPlay</AssemblyName>
@@ -934,7 +934,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="GameLogic.csproj">
-      <Project>{010F8D71-001F-6530-10BB-46C1913BCAFF}</Project>
+      <Project>{EE99E3F8-B412-9117-F32D-43E242EFAAD5}</Project>
       <Name>GameLogic</Name>
     </ProjectReference>
   </ItemGroup>
