@@ -343,6 +343,7 @@
 "Assets/Code/CollisionScoring.cs"
 "Assets/Code/LoadMenu.cs"
 "Assets/Code/LoadStartGame.cs"
+"Assets/Code/OutBounds.cs"
 "Assets/Code/SpaceshipLeftRight.cs"
 -langversion:9.0
 

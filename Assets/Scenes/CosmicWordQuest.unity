@@ -257,6 +257,7 @@ GameObject:
   - component: {fileID: 281543603}
   - component: {fileID: 281543602}
   - component: {fileID: 281543604}
+  - component: {fileID: 281543605}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -420,6 +421,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+--- !u!114 &281543605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281543596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b45dfe0fbc246968d1afb9f781ddf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &366015853
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,6 +528,10 @@ PrefabInstance:
     - target: {fileID: 180288, guid: e00b5ba5cc33edb4ca82f2d64250a907, type: 3}
       propertyPath: m_Name
       value: Example 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 180288, guid: e00b5ba5cc33edb4ca82f2d64250a907, type: 3}
+      propertyPath: m_TagString
+      value: Spaceship
       objectReference: {fileID: 0}
     - target: {fileID: 416062, guid: e00b5ba5cc33edb4ca82f2d64250a907, type: 3}
       propertyPath: m_LocalPosition.x

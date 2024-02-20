@@ -12,6 +12,7 @@ TagManager:
   - ScoreText
   - StartButton
   - BackButton
+  - Spaceship
   layers:
   - Default
   - TransparentFX
