@@ -12,7 +12,7 @@ public class BulletMovementTest : MonoBehaviour
     public void SetUp()
     {
         bullet = new GameObject("Bullet");
-        var controller = bullet.AddComponent<MoveUpwards>(); // Your custom bullet controller script
+        var controller = bullet.AddComponent<MoveUpwards>();
 
         bullet.transform.position = Vector3.zero;
 
