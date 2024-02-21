@@ -12,7 +12,11 @@ TagManager:
   - ScoreText
   - StartButton
   - BackButton
+<<<<<<< HEAD
+  - Spaceship
+=======
   - LeaderboardButton
+>>>>>>> 142253e3eb01269d0967d1d31f1eaf270a5ae8e7
   layers:
   - Default
   - TransparentFX
