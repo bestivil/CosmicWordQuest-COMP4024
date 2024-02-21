@@ -3,20 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Planet2
-  - Planet1
-  - Planet3
-  - Planet4
-  - Planet5
-  - ScoreText
-  - StartButton
-  - BackButton
-<<<<<<< HEAD
-  - Spaceship
-=======
-  - LeaderboardButton
->>>>>>> 142253e3eb01269d0967d1d31f1eaf270a5ae8e7
+  tags: []
   layers:
   - Default
   - TransparentFX
