@@ -12,6 +12,7 @@ TagManager:
   - ScoreText
   - StartButton
   - BackButton
+  - LeaderboardButton
   layers:
   - Default
   - TransparentFX
