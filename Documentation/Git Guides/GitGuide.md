@@ -1,4 +1,25 @@
+## Git clone instructions
 
+Use clone to initialise the local repository or, in cases where it is far behind from the main branch, to re-clone it to be upto date with main and (this will disgard your local changes however, so if you have them make a push first)  
+
+1. go to the green button on the main GitHub page where it says "Code"
+
+![image](https://github.com/bestivil/COMP4024-G13/assets/106749356/3c4e261c-21bd-47a3-95fd-b0584050f501)
+
+2. Copy the HTTPS url string and run this command in your terminal
+   `git clone <string>`
+
+## Git main branch being out-of-date 
+
+This issue happens a lot with our repository due to Unity files etc. changing quickly
+
+Sometimes git pull on main branch will not work if the local one is too out-of-date, so the following commands should reset the local one to be exactly like the remote main branch
+
+1. `git fetch`
+2. `git reset origin/main —hard`
+3. `git pull origin main`
+
+this will however override your local changes made to the main branch, so make sure that those are commited(if they are needed to be pushed i.e. you have done meaningful work that should be in the remote repo)
 ## Git commit instructions
 
 ### Git commit to new branch
@@ -141,5 +162,6 @@ When you think your commit is **ready for review** to be merged into dev branch,
 2. Choose the **base** branch which is the branch we want to merge the changes into e.g. dev
 3. Choose your **compare** branch e.g. your git issue branch
 4. Add title and description, describe the work in title
-5. Add **at least one** reviewer so they can review the code/changes and approve the merge
-6. Create the pull request
+5. Include screenshot/GIF of the main changes you have done e.g. how the game looks now or changes in the codebase. For GIFs use [screen capture tool](https://gifcap.dev/)
+6. Add **at least one** reviewer so they can review the code/changes and approve the merge
+7. Create the pull request
