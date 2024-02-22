@@ -26,7 +26,9 @@
 | Integrate Shoot               | 1hr vs 1 day                | Basic physics of upwards motion was a simple process to implement.       | I knew to bundle different objects and layer a script on entire object to co-ordinate movement               |
 | Return to Start Screen button | 30 min vs 30 mins           | Simple to paste objects in unity scene creator.                          | Simple to paste objects in unity scene creator                                                               |
 
-### <b>Breakdown Chart</b> <br>
+### <b>Burndown Chart</b> <br>
+
+![alt text](image-6.png)
 
 ### <b>Have you been appropriately using your Kanban board?</b> <br>
 
