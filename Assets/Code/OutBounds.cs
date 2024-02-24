@@ -47,7 +47,7 @@ public class OutBounds : MonoBehaviour
 
         if (isOutsideView)
             {
-                Debug.Log("Object is outside camera view: " + gameObject.name);
+                //Debug.Log("Object is outside camera view: " + gameObject.name);
                 transform.position = spaceshipTransform.position + offset;
             }
     }
