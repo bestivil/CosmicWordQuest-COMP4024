@@ -16,7 +16,13 @@ public class DatabaseAccess : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        database = client.GetDatabase("DB1");
+        database = client.GetDatabase("TestConnection");
+        collection = database.GetCollection<BsonDocument>("TestConnectionCollection");
+
+        // testing connection - adding to DB
+
+        var document = new BsonDocument {{"username",100}};
+        collection.InsertOne(document);
     }
 
     // Update is called once per frame
