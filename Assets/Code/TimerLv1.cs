@@ -4,24 +4,35 @@ using UnityEngine.UI; // Use UnityEngine.UI for the Text component
 public class TimerLv1 : MonoBehaviour
 {
 
-    private Text timerText; // Changed to private since we'll find it by tag
-    private Text scoreText; // Changed to private since we'll find it by tag
-    private float timer = 10f; // Start a 10-second countdown timer
+    private Text timerText;
+    private Text scoreText; 
+    private float timer = 10f; 
+
+    private GameObject usernameDialogObject;
+
+    
 
     void Start()
     {
 
         GameObject timerObject = GameObject.FindGameObjectWithTag("Timer");
         GameObject scoreObject = GameObject.FindGameObjectWithTag("ScoreText");
+        usernameDialogObject = GameObject.FindGameObjectWithTag("UsernameInput");
         if (timerObject != null)
         {
             timerText = timerObject.GetComponent<Text>();
             scoreText = scoreObject.GetComponent<Text>();
+            CanvasGroup canvasGroup = usernameDialogObject.GetComponent<CanvasGroup>(); // hiding the username dialog
+
+            if (canvasGroup != null)
+            {
+                canvasGroup.alpha = 0; 
+                canvasGroup.interactable = false; 
+                canvasGroup.blocksRaycasts = false;
+            }
+
         }
-        else
-        {
-            Debug.LogError("No game object with tag 'ScoreText' found.");
-        }
+        
     }
 
     void Update()
@@ -34,12 +45,24 @@ public class TimerLv1 : MonoBehaviour
         }
         else
         {
-            // Ensure this block only runs once when the timer first reaches 0
-            if (timer != -1) // Check if the timer has already been set to -1 to avoid repeating this block
+            
+            if (timer != -1) 
             {
                 Debug.Log("Time's up! Final Score: " + scoreText.text);
-                timer = -1; // Set timer to -1 to indicate the time's up action has been taken
-                // Perform any other actions you want when the timer hits 0
+
+                CanvasGroup canvasGroup = usernameDialogObject.GetComponent<CanvasGroup>(); //showing the username dialog, once the timer is up
+                if (canvasGroup != null)
+                {
+                    canvasGroup.alpha = 1;
+                    canvasGroup.interactable = true; 
+                    canvasGroup.blocksRaycasts = true; 
+                }
+
+
+
+
+                timer = -1; 
+                
             }
         }
     }}
