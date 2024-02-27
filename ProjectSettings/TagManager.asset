@@ -16,6 +16,7 @@ TagManager:
   - Spaceship
   - Timer
   - UsernameInput
+  - CurrentLevel
   layers:
   - Default
   - TransparentFX

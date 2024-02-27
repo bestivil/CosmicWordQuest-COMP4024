@@ -5,33 +5,27 @@ public class TimerLv1 : MonoBehaviour
 {
 
     private Text timerText;
-    private Text scoreText; 
-    private float timer = 10f; 
-
-    private GameObject usernameDialogObject;
+    private Text levelText; 
+    private float timer;
+    
 
     
 
     void Start()
     {
 
+        timer = GameManager.Instance.currentLevelTime;
         GameObject timerObject = GameObject.FindGameObjectWithTag("Timer");
-        GameObject scoreObject = GameObject.FindGameObjectWithTag("ScoreText");
-        usernameDialogObject = GameObject.FindGameObjectWithTag("UsernameInput");
+        GameObject levelObject = GameObject.FindGameObjectWithTag("CurrentLevel");
         if (timerObject != null)
         {
             timerText = timerObject.GetComponent<Text>();
-            scoreText = scoreObject.GetComponent<Text>();
-            CanvasGroup canvasGroup = usernameDialogObject.GetComponent<CanvasGroup>(); // hiding the username dialog
-
-            if (canvasGroup != null)
-            {
-                canvasGroup.alpha = 0; 
-                canvasGroup.interactable = false; 
-                canvasGroup.blocksRaycasts = false;
-            }
-
         }
+        if (levelObject != null)
+        {
+            levelText = levelObject.GetComponent<Text>();
+            levelText.text = "Level: " + GameManager.Instance.level;
+        } 
         
     }
 
@@ -40,7 +34,7 @@ public class TimerLv1 : MonoBehaviour
         if (timer > 0)
         {
             timer -= Time.deltaTime; 
-            timerText.text = "Time: " + timer.ToString("F0"); 
+            timerText.text = "Time Left: " + timer.ToString("F0"); 
             
         }
         else
@@ -48,19 +42,7 @@ public class TimerLv1 : MonoBehaviour
             
             if (timer != -1) 
             {
-                Debug.Log("Time's up! Final Score: " + scoreText.text);
-
-                CanvasGroup canvasGroup = usernameDialogObject.GetComponent<CanvasGroup>(); //showing the username dialog, once the timer is up
-                if (canvasGroup != null)
-                {
-                    canvasGroup.alpha = 1;
-                    canvasGroup.interactable = true; 
-                    canvasGroup.blocksRaycasts = true; 
-                }
-
-
-
-
+                GameManager.Instance.LevelCompleted();
                 timer = -1; 
                 
             }
