@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
         }
 
         CanvasGroup canvasGroup = usernameDialogObject.GetComponent<CanvasGroup>(); 
+        Debug.Log(canvasGroup); 
 
             if (canvasGroup != null)
             {
