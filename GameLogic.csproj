@@ -62,8 +62,10 @@
   <ItemGroup>
     <Compile Include="Assets/Code/BulletUpDown.cs" />
     <Compile Include="Assets/Code/SpaceshipOutsideView.cs" />
+    <Compile Include="Assets/Code/EnterName.cs" />
     <Compile Include="Assets/Code/ExplosionSound.cs" />
     <Compile Include="Assets/Code/DatabaseAccess.cs" />
+    <Compile Include="Assets/Code/NameScene.cs" />
     <Compile Include="Assets/Code/SpaceshipLeftRight.cs" />
     <Compile Include="Assets/Code/TimerLv1.cs" />
     <Compile Include="Assets/Code/CollisionScoring.cs" />

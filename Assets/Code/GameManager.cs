@@ -1,18 +1,22 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-
+    
     public int level = 1;
     public float currentLevelTime = 10f; // Default timing for the level
     private GameObject usernameDialogObject;
+
+    private string nameUser;
+    public string scoreUser = "0";
     
 
     void Awake()
     {
-        usernameDialogObject = GameObject.FindGameObjectWithTag("UsernameInput");
+        
         
         if (Instance == null)
         {
@@ -24,15 +28,18 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject); // Ensure there is only one GameManager
         }
 
-        CanvasGroup canvasGroup = usernameDialogObject.GetComponent<CanvasGroup>(); 
-        Debug.Log(canvasGroup); 
+        
+    }
 
-            if (canvasGroup != null)
-            {
-                canvasGroup.alpha = 0; 
-                canvasGroup.interactable = false; 
-                canvasGroup.blocksRaycasts = false;
-            }
+    void addDatabase()
+    {
+        // Add the user's name and score to the database
+    }
+
+    public void setNames(string name)
+    {
+        nameUser = name;
+        
     }
 
     public void LevelCompleted()
@@ -41,6 +48,12 @@ public class GameManager : MonoBehaviour
 
         if (level >= 3)
         {
+            GameObject scoreTextObject = GameObject.FindGameObjectWithTag("ScoreText");
+            if (scoreTextObject != null)
+            {
+                scoreUser = scoreTextObject.GetComponent<Text>().text;
+            }
+
             FinalScoreDialog();
         }
         else
@@ -51,6 +64,8 @@ public class GameManager : MonoBehaviour
 
         
     }
+
+    
 
     void AdjustLevelTiming()
     {
@@ -66,15 +81,14 @@ public class GameManager : MonoBehaviour
 
     void FinalScoreDialog()
     {
-        usernameDialogObject = GameObject.FindGameObjectWithTag("UsernameInput");
-        if (usernameDialogObject != null)
-        {
-        CanvasGroup canvasGroup = usernameDialogObject.GetComponent<CanvasGroup>();
-            if (canvasGroup != null)
-            {
-                canvasGroup.alpha = 1;
-                canvasGroup.interactable = true; 
-                canvasGroup.blocksRaycasts = true; 
-            }
-    }}
+       
+        SceneManager.LoadScene("HighScoreScreen");
+    }
+
+    public void LoadLeaderboard()
+    {
+        
+        SceneManager.LoadScene("Leaderboard");
+        
+    }
 }
