@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/HighScoreScreen.unity
+- path: Assets/Scenes/Leaderboard.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
