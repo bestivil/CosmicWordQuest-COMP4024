@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
 
     private string nameUser;
     public string scoreUser = "0";
+
+    public int liveScore = 0;
     
 
     void Awake()
