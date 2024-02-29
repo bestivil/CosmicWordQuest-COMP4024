@@ -1,68 +1,40 @@
+using System.Collections;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
-using System.Collections;
-
-public class SpaceshipLeftRight : MonoBehaviour
-{
-    
-    public void UpdateSpaceshipPosition()
-    {
-        
-    }
-
-    public Vector3 GetStartPosition()
-    {
-        
-        return Vector3.zero; 
-    }
-}
 
 public class OutBoundsTest
 {
-    private Camera mainCamera;
     private GameObject spaceship;
-    private SpaceshipLeftRight controller;
-    private Vector3 offset = Vector3.up;
+    private Vector3 startingPosition;
+
 
     [SetUp]
     public void SetUp()
     {
-        mainCamera = new GameObject("MainCamera").AddComponent<Camera>();
-        spaceship = new GameObject("Spaceship");
-        controller = spaceship.AddComponent<SpaceshipLeftRight>();
+        spaceship = GameObject.FindWithTag("Spaceship");
 
-        spaceship.transform.position = Vector3.zero;
+        startingPosition = spaceship.transform.position;
+
     }
 
     [UnityTest]
     public IEnumerator SpaceshipDoesNotGoOutOfBounds()
     {
-        // Assuming your SpaceshipLeftRight script has a method to update the spaceship position
-        controller.UpdateSpaceshipPosition();
+        // Assert
+        spaceship.transform.position = startingPosition;
 
-        // Check if spaceship is outside camera view
-        bool isOutsideView = false;
-        UpdatePositionAboveSpaceship(ref isOutsideView);
+        Assert.IsTrue(IsVisibleByCamera(),"Spaceship is Outside Camera View"); // To test, change IsTrue to IsFalse
 
         yield return null;
-
-        // Assert your conditions here
-        Assert.IsTrue(!isOutsideView); // Replace this condition with your actual check
     }
 
-    void UpdatePositionAboveSpaceship(ref bool isOutsideView)
+    bool IsVisibleByCamera()
     {
-        if (spaceship != null)
-        {
-            Vector3 viewportPosition = mainCamera.WorldToViewportPoint(spaceship.transform.position);
-            isOutsideView = (viewportPosition.x < 0 || viewportPosition.x > 1 || viewportPosition.y < 0 || viewportPosition.y > 1);
+        // Get the object's position in the viewport
+        Vector3 viewportPosition = Camera.main.WorldToViewportPoint(spaceship.transform.position);
 
-            if (isOutsideView)
-            {
-                Debug.Log("Object is outside camera view: " + spaceship.name);
-                spaceship.transform.position = controller.GetStartPosition() + offset;
-            }
-        }
+        // Check if the object's position is within the viewport bounds
+        return (viewportPosition.x > -0.1 && viewportPosition.x < 0.9 && viewportPosition.y > 0 && viewportPosition.y < 1);
     }
 }
