@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -6,6 +7,11 @@ public class LoadStartGame : MonoBehaviour
 {
     ToggleGroup toggleGroup;
     
+
+    void Start(){
+        toggleGroup = GetComponent<ToggleGroup>();
+    }
+
     void Update()
     {
         if (Input.GetMouseButtonDown(0)) // Check if the left mouse button was pressed
@@ -26,6 +32,8 @@ public class LoadStartGame : MonoBehaviour
     
 
     public void onClick(){
+        Toggle toggle = toggleGroup.ActiveToggles().FirstOrDefault();
+        Debug.Log(toggle.name + "_" + toggle.GetComponentInChildren<Text>().text);
         SceneManager.LoadScene("CosmicWordQuest"); // Load the game scene
     }
 }
