@@ -5,16 +5,16 @@ using System.Collections;
 
 public class SpaceshipLeftRight : MonoBehaviour
 {
-    // You should have your actual spaceship control logic here
+    
     public void UpdateSpaceshipPosition()
     {
-        // Implement the method to update the spaceship's position
+        
     }
 
     public Vector3 GetStartPosition()
     {
-        // Implement the method to return the spaceship's starting position
-        return Vector3.zero; // Replace with the actual starting position
+        
+        return Vector3.zero; 
     }
 }
 
