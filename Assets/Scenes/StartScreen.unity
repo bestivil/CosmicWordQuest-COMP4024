@@ -1103,7 +1103,6 @@ GameObject:
   - component: {fileID: 440062545}
   - component: {fileID: 440062547}
   - component: {fileID: 440062546}
-  - component: {fileID: 440062548}
   m_Layer: 5
   m_Name: LanguageChoicePanel
   m_TagString: Untagged
@@ -1171,18 +1170,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 440062544}
   m_CullTransparentMesh: 1
---- !u!114 &440062548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 440062544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14a74331c7505bf4681960ab73a03b8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &558501021 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 753899770008723726, guid: 963cbbcf5fa5046ecb300a85e08a6632, type: 3}
@@ -1346,7 +1333,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 573627789}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a66e130fea77194b900dcb79b08f79b, type: 3}
+  m_Script: {fileID: 11500000, guid: 98037559d715b2f4bb7bc7b3ee89d995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &586492570
@@ -2207,7 +2194,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 573627792}
-        m_TargetAssemblyTypeName: test, GameLogic
+        m_TargetAssemblyTypeName: StartGame, GameLogic
         m_MethodName: onClick
         m_Mode: 1
         m_Arguments:
