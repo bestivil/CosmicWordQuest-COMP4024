@@ -32,7 +32,9 @@ public class JSON : MonoBehaviour
         wordListWrapper = JsonUtility.FromJson<WordListWrapper>("{\"words\":" + wordsJSON.text + "}");
         Word[] wordList = wordListWrapper.words;
 
-        Debug.Log(wordList[0].Spanish);
+        //Debug.Log(wordList[0].Spanish);
+
+        Debug.Log(StateController.languageChoice);
     }
 
     // Update is called once per frame
