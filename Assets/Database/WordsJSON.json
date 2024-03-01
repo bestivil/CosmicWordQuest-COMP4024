@@ -1,0 +1,902 @@
+[
+    {
+        "English": "Abundant",
+        "French": "Abondant",
+        "Spanish": "Abundante",
+        "Italian": "Abbondante"
+    },
+    {
+        "English": "Achieve",
+        "French": "Atteindre",
+        "Spanish": "Lograr",
+        "Italian": "Raggiungere"
+    },
+    {
+        "English": "Adapt",
+        "French": "Adapter",
+        "Spanish": "Adaptar",
+        "Italian": "Adattare"
+    },
+    {
+        "English": "Appreciate",
+        "French": "Apprécier",
+        "Spanish": "Agradecer",
+        "Italian": "Apprezzare"
+    },
+    {
+        "English": "Approach",
+        "French": "Approche",
+        "Spanish": "Acercarse",
+        "Italian": "Approccio"
+    },
+    {
+        "English": "Attitude",
+        "French": "Attitude",
+        "Spanish": "Actitud",
+        "Italian": "Atteggiamento"
+    },
+    {
+        "English": "Behavior",
+        "French": "Comportement",
+        "Spanish": "Comportamiento",
+        "Italian": "Comportamento"
+    },
+    {
+        "English": "Belief",
+        "French": "Croyance",
+        "Spanish": "Creencia",
+        "Italian": "Credenza"
+    },
+    {
+        "English": "Benefit",
+        "French": "Avantage",
+        "Spanish": "Beneficio",
+        "Italian": "Beneficio"
+    },
+    {
+        "English": "Challenge",
+        "French": "Défi",
+        "Spanish": "Desafío",
+        "Italian": "Sfida"
+    },
+    {
+        "English": "Character",
+        "French": "Caractère",
+        "Spanish": "Personaje",
+        "Italian": "Carattere"
+    },
+    {
+        "English": "Circumstance",
+        "French": "Circonstance",
+        "Spanish": "Circunstancia",
+        "Italian": "Circostanza"
+    },
+    {
+        "English": "Collaborate",
+        "French": "Collaborer",
+        "Spanish": "Colaborar",
+        "Italian": "Collaborare"
+    },
+    {
+        "English": "Commence",
+        "French": "Commencer",
+        "Spanish": "Comenzar",
+        "Italian": "Iniziare"
+    },
+    {
+        "English": "Comprehend",
+        "French": "Comprendre",
+        "Spanish": "Comprender",
+        "Italian": "Comprendere"
+    },
+    {
+        "English": "Consequence",
+        "French": "Conséquence",
+        "Spanish": "Consecuencia",
+        "Italian": "Conseguenza"
+    },
+    {
+        "English": "Consistent",
+        "French": "Cohérent",
+        "Spanish": "Coherente",
+        "Italian": "Coerente"
+    },
+    {
+        "English": "Construct",
+        "French": "Construire",
+        "Spanish": "Construir",
+        "Italian": "Costruire"
+    },
+    {
+        "English": "Contribute",
+        "French": "Contribuer",
+        "Spanish": "Contribuir",
+        "Italian": "Contribuire"
+    },
+    {
+        "English": "Convince",
+        "French": "Convaincre",
+        "Spanish": "Convencer",
+        "Italian": "Convincere"
+    },
+    {
+        "English": "Decline",
+        "French": "Décliner",
+        "Spanish": "Rechazar",
+        "Italian": "Declino"
+    },
+    {
+        "English": "Define",
+        "French": "Définir",
+        "Spanish": "Definir",
+        "Italian": "Definire"
+    },
+    {
+        "English": "Definite",
+        "French": "Définitif ",
+        "Spanish": "Definido",
+        "Italian": "Definito"
+    },
+    {
+        "English": "Demonstrate",
+        "French": "Démontrer",
+        "Spanish": "Demostrar",
+        "Italian": "Dimostrare"
+    },
+    {
+        "English": "Dependent",
+        "French": "Dépendant",
+        "Spanish": "Dependiente",
+        "Italian": "Dipendente"
+    },
+    {
+        "English": "Determine",
+        "French": "Déterminer",
+        "Spanish": "Determinar",
+        "Italian": "Determinare"
+    },
+    {
+        "English": "Development",
+        "French": "Développement",
+        "Spanish": "Desarrollo",
+        "Italian": "Sviluppo"
+    },
+    {
+        "English": "Differentiate",
+        "French": "Différencier",
+        "Spanish": "Diferenciar",
+        "Italian": "Differenziare"
+    },
+    {
+        "English": "Discourage",
+        "French": "Décourager",
+        "Spanish": "Desalentar",
+        "Italian": "Scoraggiare"
+    },
+    {
+        "English": "Dispute",
+        "French": "Différend",
+        "Spanish": "Disputar",
+        "Italian": "Controversia"
+    },
+    {
+        "English": "Efficient",
+        "French": "Efficace",
+        "Spanish": "Eficiente",
+        "Italian": "Efficiente"
+    },
+    {
+        "English": "Encounter",
+        "French": "Rencontrer",
+        "Spanish": "Encontrar",
+        "Italian": "Incontrare"
+    },
+    {
+        "English": "Engage",
+        "French": "S'engager",
+        "Spanish": "Comprometer",
+        "Italian": "Ingaggiare"
+    },
+    {
+        "English": "Environment",
+        "French": "Environnement",
+        "Spanish": "Ambiente",
+        "Italian": "Ambiente"
+    },
+    {
+        "English": "Establish",
+        "French": "Établir",
+        "Spanish": "Establecer",
+        "Italian": "Stabilire"
+    },
+    {
+        "English": "Evaluate",
+        "French": "Évaluer",
+        "Spanish": "Evaluar",
+        "Italian": "Valutare"
+    },
+    {
+        "English": "Evidence",
+        "French": "Preuve",
+        "Spanish": "Evidencia",
+        "Italian": "Prova"
+    },
+    {
+        "English": "Exception",
+        "French": "Exception",
+        "Spanish": "Excepción",
+        "Italian": "Eccezione"
+    },
+    {
+        "English": "Exchange",
+        "French": "Échange",
+        "Spanish": "Intercambio",
+        "Italian": "Scambio"
+    },
+    {
+        "English": "Exhilarating",
+        "French": "Exaltant",
+        "Spanish": "emocionante",
+        "Italian": "Esilarante"
+    },
+    {
+        "English": "Expand",
+        "French": "Développer",
+        "Spanish": "Expandir",
+        "Italian": "Espandere"
+    },
+    {
+        "English": "Explanation",
+        "French": "Explication",
+        "Spanish": "Explicación",
+        "Italian": "Spiegazione"
+    },
+    {
+        "English": "Familiar",
+        "French": "Familier",
+        "Spanish": "Familiar",
+        "Italian": "Familiare"
+    },
+    {
+        "English": "Feature",
+        "French": "Fonctionnalité",
+        "Spanish": "Característica",
+        "Italian": "Caratteristica"
+    },
+    {
+        "English": "Foundation",
+        "French": "Fondation",
+        "Spanish": "Base",
+        "Italian": "Fondazione"
+    },
+    {
+        "English": "Generate",
+        "French": "Générer",
+        "Spanish": "Generar",
+        "Italian": "creare"
+    },
+    {
+        "English": "Genuine",
+        "French": "Authentique",
+        "Spanish": "Genuino",
+        "Italian": "Genuino"
+    },
+    {
+        "English": "Global",
+        "French": "Mondial",
+        "Spanish": "Global",
+        "Italian": "Globale"
+    },
+    {
+        "English": "Goal",
+        "French": "Objectif",
+        "Spanish": "Meta",
+        "Italian": "Obiettivo"
+    },
+    {
+        "English": "Gradual",
+        "French": "Graduel",
+        "Spanish": "Gradual",
+        "Italian": "Graduale"
+    },
+    {
+        "English": "Guarantee",
+        "French": "Garantie",
+        "Spanish": "Garantizar",
+        "Italian": "Garanzia"
+    },
+    {
+        "English": "Harmony",
+        "French": "Harmonie",
+        "Spanish": "Armonía",
+        "Italian": "Armonia"
+    },
+    {
+        "English": "Identify",
+        "French": "Identifier",
+        "Spanish": "Identificar",
+        "Italian": "Identificare"
+    },
+    {
+        "English": "Ignore",
+        "French": "Ignorer",
+        "Spanish": "Ignorar",
+        "Italian": "Ignorare"
+    },
+    {
+        "English": "Impact",
+        "French": "Impact",
+        "Spanish": "Impacto",
+        "Italian": "Impatto"
+    },
+    {
+        "English": "Implement",
+        "French": "Mettre en œuvre",
+        "Spanish": "Implementar",
+        "Italian": "Strumento"
+    },
+    {
+        "English": "Imply",
+        "French": "Impliquer",
+        "Spanish": "Implicar",
+        "Italian": "Implicare"
+    },
+    {
+        "English": "Improve",
+        "French": "Améliorer",
+        "Spanish": "Mejorar",
+        "Italian": "Migliorare"
+    },
+    {
+        "English": "Incentive",
+        "French": "Incitatif",
+        "Spanish": "Incentivo",
+        "Italian": "Incentivo"
+    },
+    {
+        "English": "Independence",
+        "French": "Indépendance",
+        "Spanish": "Independencia",
+        "Italian": "Indipendenza"
+    },
+    {
+        "English": "Indicate",
+        "French": "Indiquer",
+        "Spanish": "Indicar",
+        "Italian": "Indicare"
+    },
+    {
+        "English": "Individual",
+        "French": "Individuel / Individuelle",
+        "Spanish": "Individual",
+        "Italian": "Individuale"
+    },
+    {
+        "English": "Influence",
+        "French": "Influencer",
+        "Spanish": "Influencia",
+        "Italian": "Influenza"
+    },
+    {
+        "English": "Initial",
+        "French": "Initial",
+        "Spanish": "Inicial",
+        "Italian": "Iniziale"
+    },
+    {
+        "English": "Innovate",
+        "French": "Innover",
+        "Spanish": "Innovar",
+        "Italian": "Innovare"
+    },
+    {
+        "English": "Insight",
+        "French": "Aperçu",
+        "Spanish": "Conocimiento",
+        "Italian": "Intuizione"
+    },
+    {
+        "English": "Inspire",
+        "French": "Inspirer",
+        "Spanish": "Inspirar",
+        "Italian": "Ispirare"
+    },
+    {
+        "English": "Integrate",
+        "French": "Intégrer",
+        "Spanish": "Integrar",
+        "Italian": "Integrare"
+    },
+    {
+        "English": "Interpret",
+        "French": "Interpréter",
+        "Spanish": "Interpretar",
+        "Italian": "Interpretare"
+    },
+    {
+        "English": "Investigation",
+        "French": "Enquête",
+        "Spanish": "Investigación",
+        "Italian": "Indagine"
+    },
+    {
+        "English": "Isolate",
+        "French": "Isoler",
+        "Spanish": "Aislar",
+        "Italian": "Isolato"
+    },
+    {
+        "English": "Justify",
+        "French": "Justifier",
+        "Spanish": "Justificar",
+        "Italian": "Giustificare"
+    },
+    {
+        "English": "Limitation",
+        "French": "Limitation",
+        "Spanish": "Limitación",
+        "Italian": "Limitazione"
+    },
+    {
+        "English": "Majority",
+        "French": "Majorité",
+        "Spanish": "Mayoría",
+        "Italian": "Maggioranza"
+    },
+    {
+        "English": "Maintain",
+        "French": "Maintenir",
+        "Spanish": "Mantener",
+        "Italian": "Mantenere"
+    },
+    {
+        "English": "Motivate",
+        "French": "Motiver",
+        "Spanish": "Motivar",
+        "Italian": "Motivare"
+    },
+    {
+        "English": "Navigate",
+        "French": "Naviguer",
+        "Spanish": "Navegar",
+        "Italian": "Navigare"
+    },
+    {
+        "English": "Necessity",
+        "French": "Nécessité",
+        "Spanish": "Necesidad",
+        "Italian": "Necessità"
+    },
+    {
+        "English": "Obstacle",
+        "French": "Obstacle",
+        "Spanish": "Obstáculo",
+        "Italian": "Ostacolo"
+    },
+    {
+        "English": "Opportunity",
+        "French": "Opportunité",
+        "Spanish": "Oportunidad",
+        "Italian": "Opportunità"
+    },
+    {
+        "English": "Optimum",
+        "French": "Optimum",
+        "Spanish": "Óptimo",
+        "Italian": "Ottimale"
+    },
+    {
+        "English": "Organize",
+        "French": "Organiser",
+        "Spanish": "Organizar",
+        "Italian": "Organizzare"
+    },
+    {
+        "English": "Participate",
+        "French": "Participer",
+        "Spanish": "Participar",
+        "Italian": "Partecipare"
+    },
+    {
+        "English": "Perception",
+        "French": "Perception",
+        "Spanish": "Percepción",
+        "Italian": "Percezione"
+    },
+    {
+        "English": "Persuade",
+        "French": "Persuader",
+        "Spanish": "Persuadir",
+        "Italian": "Persuadere"
+    },
+    {
+        "English": "Perspective",
+        "French": "Perspective",
+        "Spanish": "Perspectiva",
+        "Italian": "Prospettiva"
+    },
+    {
+        "English": "Possibility",
+        "French": "Possibilité",
+        "Spanish": "Posibilidad",
+        "Italian": "Possibilità"
+    },
+    {
+        "English": "Potential",
+        "French": "Potentiel",
+        "Spanish": "Potencial",
+        "Italian": "Potenziale"
+    },
+    {
+        "English": "Precise",
+        "French": "Précis",
+        "Spanish": "Preciso",
+        "Italian": "Preciso"
+    },
+    {
+        "English": "Predict",
+        "French": "Prédire",
+        "Spanish": "Predecir",
+        "Italian": "Prevedere"
+    },
+    {
+        "English": "Principle",
+        "French": "Principe",
+        "Spanish": "Principio",
+        "Italian": "Principio"
+    },
+    {
+        "English": "Priority",
+        "French": "Priorité",
+        "Spanish": "Prioridad",
+        "Italian": "Priorità"
+    },
+    {
+        "English": "Procedure",
+        "French": "Procédure",
+        "Spanish": "Procedimiento",
+        "Italian": "Procedura"
+    },
+    {
+        "English": "Process",
+        "French": "Processus",
+        "Spanish": "Proceso",
+        "Italian": "Processi"
+    },
+    {
+        "English": "Produce",
+        "French": "Produire",
+        "Spanish": "Producir",
+        "Italian": "Produrre"
+    },
+    {
+        "English": "Proficient",
+        "French": "Compétent",
+        "Spanish": "Competente",
+        "Italian": "Competente"
+    },
+    {
+        "English": "Progress",
+        "French": "Progrès",
+        "Spanish": "Progreso",
+        "Italian": "Progresso"
+    },
+    {
+        "English": "Promote",
+        "French": "Promouvoir",
+        "Spanish": "Promover",
+        "Italian": "Promuovere"
+    },
+    {
+        "English": "Prosper",
+        "French": "Prospérer",
+        "Spanish": "Prosperar",
+        "Italian": "Prosperare"
+    },
+    {
+        "English": "Pursue",
+        "French": "Poursuivre",
+        "Spanish": "Buscar",
+        "Italian": "Perseguire"
+    },
+    {
+        "English": "Qualify",
+        "French": "Qualifier",
+        "Spanish": "Calificar",
+        "Italian": "Qualificare"
+    },
+    {
+        "English": "Quality",
+        "French": "Qualité",
+        "Spanish": "Calidad",
+        "Italian": "Qualità"
+    },
+    {
+        "English": "Quantity",
+        "French": "Quantité",
+        "Spanish": "Cantidad",
+        "Italian": "Quantità"
+    },
+    {
+        "English": "React",
+        "French": "Réagir",
+        "Spanish": "Reaccionar",
+        "Italian": "Reagire"
+    },
+    {
+        "English": "Realistic",
+        "French": "Réaliste",
+        "Spanish": "Realista",
+        "Italian": "Realistico"
+    },
+    {
+        "English": "Recognize",
+        "French": "Reconnaître",
+        "Spanish": "Reconocer",
+        "Italian": "Riconoscere"
+    },
+    {
+        "English": "Reflect",
+        "French": "Réfléter",
+        "Spanish": "Reflejar",
+        "Italian": "Riflettere"
+    },
+    {
+        "English": "Regulate",
+        "French": "Réglementer",
+        "Spanish": "Regular",
+        "Italian": "Regolare"
+    },
+    {
+        "English": "Relevant",
+        "French": "Pertinent",
+        "Spanish": "Importante",
+        "Italian": "Pertinente"
+    },
+    {
+        "English": "Reliable",
+        "French": "Fiable",
+        "Spanish": "Confiable",
+        "Italian": "Affidabile"
+    },
+    {
+        "English": "Resilient",
+        "French": "Résilient",
+        "Spanish": "Resiliente",
+        "Italian": "Resiliente"
+    },
+    {
+        "English": "Resolve",
+        "French": "Résoudre",
+        "Spanish": "Resolver",
+        "Italian": "Risolvere"
+    },
+    {
+        "English": "Resourceful",
+        "French": "Ingénieux",
+        "Spanish": "Ingenioso",
+        "Italian": "Pieno di risorse"
+    },
+    {
+        "English": "Response",
+        "French": "Réponse",
+        "Spanish": "Respuesta",
+        "Italian": "Risposta"
+    },
+    {
+        "English": "Restrict",
+        "French": "Restreindre",
+        "Spanish": "Restringir",
+        "Italian": "Limitare"
+    },
+    {
+        "English": "Revise",
+        "French": "Réviser",
+        "Spanish": "Revisar",
+        "Italian": "Rivedere"
+    },
+    {
+        "English": "Significant",
+        "French": "Significatif",
+        "Spanish": "Significativo",
+        "Italian": "Significativo"
+    },
+    {
+        "English": "Simulate",
+        "French": "Simuler",
+        "Spanish": "Simular",
+        "Italian": "Simulare"
+    },
+    {
+        "English": "Specify",
+        "French": "Spécifier",
+        "Spanish": "Especificar",
+        "Italian": "Specificare"
+    },
+    {
+        "English": "Strategy",
+        "French": "Stratégie",
+        "Spanish": "Estrategia",
+        "Italian": "Strategia"
+    },
+    {
+        "English": "Structure",
+        "French": "Structure",
+        "Spanish": "Estructura",
+        "Italian": "Struttura"
+    },
+    {
+        "English": "Subsequent",
+        "French": "Subséquent",
+        "Spanish": "Después",
+        "Italian": "Successivamente"
+    },
+    {
+        "English": "Sufficient",
+        "French": "Suffisant",
+        "Spanish": "Suficiente",
+        "Italian": "Sufficiente"
+    },
+    {
+        "English": "Summarize",
+        "French": "Résumer",
+        "Spanish": "Resumir",
+        "Italian": "Riassumere"
+    },
+    {
+        "English": "Support",
+        "French": "Soutien",
+        "Spanish": "Apoyo",
+        "Italian": "Supporto"
+    },
+    {
+        "English": "Sustainable",
+        "French": "Durable",
+        "Spanish": "Sostenible",
+        "Italian": "Sostenibile"
+    },
+    {
+        "English": "Synthesize",
+        "French": "Synthétiser",
+        "Spanish": "sintetizar",
+        "Italian": "Sintetizzare"
+    },
+    {
+        "English": "Target",
+        "French": "Cible",
+        "Spanish": "Objetivo",
+        "Italian": "Bersaglio"
+    },
+    {
+        "English": "Tendency",
+        "French": "Tendance",
+        "Spanish": "Tendencia",
+        "Italian": "Tendenza"
+    },
+    {
+        "English": "Transform",
+        "French": "Transformer",
+        "Spanish": "Transformar",
+        "Italian": "Trasformare"
+    },
+    {
+        "English": "Unique",
+        "French": "Unique",
+        "Spanish": "Único",
+        "Italian": "Unico"
+    },
+    {
+        "English": "Utilize",
+        "French": "Utiliser",
+        "Spanish": "Utilizar",
+        "Italian": "Utilizzare"
+    },
+    {
+        "English": "Validate",
+        "French": "Valider",
+        "Spanish": "Validar",
+        "Italian": "Convalidare"
+    },
+    {
+        "English": "Variable",
+        "French": "Variable",
+        "Spanish": "Variable",
+        "Italian": "Variabile"
+    },
+    {
+        "English": "Verify",
+        "French": "Vérifier",
+        "Spanish": "Verificar",
+        "Italian": "Verificare"
+    },
+    {
+        "English": "Vigorous",
+        "French": "Vigoureux",
+        "Spanish": "Vigoroso",
+        "Italian": "Vigoroso"
+    },
+    {
+        "English": "Visualize",
+        "French": "Visualiser",
+        "Spanish": "Visualizar",
+        "Italian": "Visualizzare"
+    },
+    {
+        "English": "Vital",
+        "French": "Vital",
+        "Spanish": "Vital",
+        "Italian": "Vitale"
+    },
+    {
+        "English": "Vulnerable",
+        "French": "Vulnérable",
+        "Spanish": "Vulnerable",
+        "Italian": "Vulnerabile"
+    },
+    {
+        "English": "Welfare",
+        "French": "Bien-être",
+        "Spanish": "Bienestar",
+        "Italian": "Benessere"
+    },
+    {
+        "English": "Widespread",
+        "French": "Répandu",
+        "Spanish": "Generalizado",
+        "Italian": "Esteso"
+    },
+    {
+        "English": "Withdraw",
+        "French": "Retirer",
+        "Spanish": "Retirar",
+        "Italian": "Ritirare"
+    },
+    {
+        "English": "Yield",
+        "French": "Rendement",
+        "Spanish": "Producir",
+        "Italian": "Prodotto"
+    },
+    {
+        "English": "Zeal",
+        "French": "Zèle",
+        "Spanish": "Celo",
+        "Italian": "Zelo"
+    },
+    {
+        "English": "Adaptation",
+        "French": "Adaptation",
+        "Spanish": "Adaptación",
+        "Italian": "Adattamento"
+    },
+    {
+        "English": "Collaboration",
+        "French": "Collaboration",
+        "Spanish": "Colaboración",
+        "Italian": "Collaborazione"
+    },
+    {
+        "English": "Determination",
+        "French": "Détermination",
+        "Spanish": "Determinación",
+        "Italian": "Determinazione"
+    },
+    {
+        "English": "Independence",
+        "French": "Indépendance",
+        "Spanish": "Independencia",
+        "Italian": "Indipendenza"
+    },
+    {
+        "English": "Interpretation",
+        "French": "Interprétation",
+        "Spanish": "Interpretación",
+        "Italian": "Interpretazione"
+    },
+    {
+        "English": "Innovation",
+        "French": "Innovation",
+        "Spanish": "Innovación",
+        "Italian": "Innovazione"
+    }
+]
