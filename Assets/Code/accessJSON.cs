@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JSON : MonoBehaviour
+public class accessJSON : MonoBehaviour
 {
     // Start is called before the first frame update
     
@@ -30,11 +30,12 @@ public class JSON : MonoBehaviour
 
 
         wordListWrapper = JsonUtility.FromJson<WordListWrapper>("{\"words\":" + wordsJSON.text + "}");
-        Word[] wordList = wordListWrapper.words;
+        StateController.wordList = wordListWrapper.words; // access this word list in other classes
 
-        //Debug.Log(wordList[0].Spanish);
+        Debug.Log(StateController.wordList[0].Spanish);
 
-        Debug.Log(StateController.languageChoice);
+        
+        //Debug.Log(StateController.languageChoice);
     }
 
     // Update is called once per frame
