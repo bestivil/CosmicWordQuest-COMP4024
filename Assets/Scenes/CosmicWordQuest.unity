@@ -408,8 +408,8 @@ GameObject:
   - component: {fileID: 170597846}
   - component: {fileID: 170597845}
   m_Layer: 5
-  m_Name: WordSpaceship
-  m_TagString: Untagged
+  m_Name: SpaceshipWord
+  m_TagString: SpaceshipWord
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
