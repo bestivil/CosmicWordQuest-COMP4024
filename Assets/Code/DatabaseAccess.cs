@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using MongoDB.Driver;
 using MongoDB.Bson;
+using System.Data.Common;
 
 public class DatabaseAccess : MonoBehaviour
 {
@@ -14,20 +15,68 @@ public class DatabaseAccess : MonoBehaviour
     IMongoCollection<BsonDocument>collection;
 
     // Start is called before the first frame update
-    void Start()
+    async void Start()
     {
-        database = client.GetDatabase("TestConnection");
-        collection = database.GetCollection<BsonDocument>("TestConnectionCollection");
+        database = client.GetDatabase("wordTranslations");
+        collection = database.GetCollection<BsonDocument>("wordTranslations");
 
-        // testing connection - adding to DB
+        Debug.Log(collection);
 
-        var document = new BsonDocument {{"username",100}};
-        collection.InsertOne(document);
+        /*
+        Db = GameObject.FindGameObjectWithTag("RandomRecordEnglish1");
+        if (Db != null)
+        {
+            GetRandomRecord()
+        }
+
+        */
+
+
+        var documents = await collection.Find(new BsonDocument()).ToListAsync();
+        Debug.Log(documents);
+
+        //return (from p in collection.AsQueryable() select p["English"]).ToList();
+
+
+
+
+
+        var allWords = collection.FindAsync(new BsonDocument());
+        var allWordsAwaited = await allWords;
+
+        //List<Word> words = new List<Word>();
+
+        //foreach (var word in allWordsAwaited.ToList()){
+        //    words.Add(Deserialize(word.ToString()));
+       // }
+        //return words;
     }
+    /*
+    public async Task<List>
+
+
+    private Word Deserialize(string rawJson){
+
+    }
+    */
+
 
     // Update is called once per frame
     void Update()
     {
         
     }
+
+    void GetRandomRecord()
+    {
+        
+    }
 }
+
+/*
+public class Word{
+
+    public string 
+
+}
+*/

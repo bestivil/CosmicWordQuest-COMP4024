@@ -19,6 +19,12 @@ TagManager:
   - CurrentLevel
   - input
   - Your_score
+  - Planet1Text
+  - Planet2Text
+  - Planet3Text
+  - Planet4Text
+  - Planet5Text
+  - SpaceshipWord
   layers:
   - Default
   - TransparentFX

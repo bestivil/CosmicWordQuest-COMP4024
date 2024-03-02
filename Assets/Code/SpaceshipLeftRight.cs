@@ -6,7 +6,6 @@ public class SpaceshipLeftRight : MonoBehaviour
 {
     public float moveSpeed = 5000f; // Speed of movement
 
-    // Update is called once per frame
     void Update()
     {
         // move spaceship if left arrow pressed
