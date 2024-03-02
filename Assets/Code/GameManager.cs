@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -14,6 +16,10 @@ public class GameManager : MonoBehaviour
     public string scoreUser = "0";
 
     public int liveScore = 0;
+
+    public int[] randomNumbersArray;
+    public int correctAnswer = 0;
+
     
 
     void Awake()
@@ -29,6 +35,8 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject); // Ensure there is only one GameManager
         }
+
+        getRandomArray();
 
         
     }
@@ -48,7 +56,7 @@ public class GameManager : MonoBehaviour
     {
         level++;
 
-        if (level >= 3)
+        if (level >= 11)
         {
             GameObject scoreTextObject = GameObject.FindGameObjectWithTag("ScoreText");
             if (scoreTextObject != null)
@@ -61,6 +69,7 @@ public class GameManager : MonoBehaviour
         else
         {
             AdjustLevelTiming();
+            getRandomArray();
             LoadCurrentScene();
         }
 
@@ -72,7 +81,7 @@ public class GameManager : MonoBehaviour
     void AdjustLevelTiming()
     {
         
-        currentLevelTime = Mathf.Max(5, currentLevelTime - 3);
+        currentLevelTime = Mathf.Max(5, currentLevelTime - 0);
     }
 
     void LoadCurrentScene()
@@ -92,5 +101,16 @@ public class GameManager : MonoBehaviour
         
         SceneManager.LoadScene("Leaderboard");
         
+    }
+
+
+    void getRandomArray()
+    {
+        List<int> randIntArray = new List<int>();
+        while(randIntArray.Count < 5){
+            randIntArray.Add(UnityEngine.Random.Range(1, 149));
+        }
+        randomNumbersArray = randIntArray.ToArray();
+        correctAnswer = randomNumbersArray[Random.Range(0, randomNumbersArray.Length)];
     }
 }

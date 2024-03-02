@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class EnterName : MonoBehaviour
 {
-    public InputField inputField; // Public if you want to assign it via the Inspector
+    public InputField inputField; 
 
     void Start()
     {
-        // If the InputField is not assigned via the Inspector, find it by tag or another method
+ 
         if (inputField == null)
         {
             GameObject usernameDialogObject = GameObject.FindGameObjectWithTag("input");
@@ -19,7 +19,7 @@ public class EnterName : MonoBehaviour
             }
         }
 
-        // Register the onEndEdit event listener
+        
         if (inputField != null)
         {
             inputField.onEndEdit.AddListener(delegate { CheckEnterPress(inputField.text); });
@@ -28,7 +28,6 @@ public class EnterName : MonoBehaviour
 
     private void CheckEnterPress(string inputValue)
     {
-        // Since onEndEdit is called even when Escape is pressed, check if the Enter or Return key is pressed
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter) || inputField.isFocused)
         {
             GameManager.Instance.setNames(inputValue); 

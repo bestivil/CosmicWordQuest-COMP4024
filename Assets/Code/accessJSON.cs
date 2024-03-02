@@ -6,7 +6,12 @@ public class accessJSON : MonoBehaviour
 {
     // Start is called before the first frame update
     
+    
+    private List<int> randIntArray = new List<int>();
     public TextAsset wordsJSON;
+
+    public static int correctAnswer;
+    public static int[] randomNumbersArray;
     
     [System.Serializable]
     public class Word{
@@ -36,6 +41,10 @@ public class accessJSON : MonoBehaviour
 
         
         //Debug.Log(StateController.languageChoice);
+
+        
+
+
     }
 
     // Update is called once per frame
