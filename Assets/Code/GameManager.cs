@@ -130,8 +130,9 @@ public class GameManager : MonoBehaviour
     {
         string json = JsonUtility.ToJson(player);
         Debug.Log(json); //test print to ensure the name and score are being saved
+        Debug.Log(Application.persistentDataPath);
 
-        string filePath = "Assets/Code/Leaderboard.json";
+        string filePath = "Assets/Resources/Leaderboard.json";
         Directory.CreateDirectory(Path.GetDirectoryName(filePath));
         Debug.Log("Saving to: " + filePath);
         using (StreamWriter sw = File.AppendText(filePath))

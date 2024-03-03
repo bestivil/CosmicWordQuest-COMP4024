@@ -1,0 +1,13 @@
+{
+  "players": [
+    {
+      "score": 2,
+      "name": "Bruce"
+    },
+    {
+      "score": 3,
+      "name": "Clark"
+    }
+  ]
+}
+{"score":1,"name":"Bruce"}

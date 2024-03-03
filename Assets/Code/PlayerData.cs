@@ -8,3 +8,10 @@ public class PlayerData
     public int score;
     public string name;
 }
+
+
+[System.Serializable]
+public class PlayerDataList
+{
+    public List<PlayerData> players;
+}

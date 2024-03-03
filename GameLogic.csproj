@@ -65,6 +65,7 @@
     <Compile Include="Assets/Code/EnterName.cs" />
     <Compile Include="Assets/Code/ExplosionSound.cs" />
     <Compile Include="Assets/Code/DatabaseAccess.cs" />
+    <Compile Include="Assets/Code/LeaderboardManager.cs" />
     <Compile Include="Assets/Code/StartGame.cs" />
     <Compile Include="Assets/Code/JsonTest.cs" />
     <Compile Include="Assets/Code/NameScene.cs" />
