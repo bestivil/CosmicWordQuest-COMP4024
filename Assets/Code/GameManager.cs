@@ -4,6 +4,7 @@ using System.Data;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.IO;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,11 +21,13 @@ public class GameManager : MonoBehaviour
 
     public int[] randomNumbersArray;
     public int correctAnswer = 0;
+    public PlayerData player = new PlayerData();
 
     
 
     void Awake()
     {
+        
         
         
         if (Instance == null)
@@ -40,6 +43,8 @@ public class GameManager : MonoBehaviour
         getRandomArray();
 
         
+
+        
     }
 
     void addDatabase()
@@ -49,13 +54,16 @@ public class GameManager : MonoBehaviour
 
     public void setNames(string name)
     {
-        nameUser = name;
+        player.name = name;
+        SaveToFile();
+        
         
     }
 
     public void LevelCompleted()
     {
         level++;
+
 
         if (level >= 11)
         {
@@ -64,7 +72,11 @@ public class GameManager : MonoBehaviour
             {
                 scoreUser = scoreTextObject.GetComponent<Text>().text;
             }
+            player.score = liveScore;
 
+        
+
+            
             FinalScoreDialog();
         }
         else
@@ -123,5 +135,19 @@ public class GameManager : MonoBehaviour
         //store the index to which we find the word in list
         //it is exclusive for array Length as being max value
         correctAnswer = randomNumbersArray[Random.Range(0, randomNumbersArray.Length)];
+    }
+    
+    void SaveToFile()
+    {
+        string json = JsonUtility.ToJson(player);
+        Debug.Log(json); //test print to ensure the name and score are being saved
+
+        string filePath = "Assets/Code/Leaderboard.json";
+        Directory.CreateDirectory(Path.GetDirectoryName(filePath));
+        Debug.Log("Saving to: " + filePath);
+        using (StreamWriter sw = File.AppendText(filePath))
+        {
+            sw.WriteLine(json);
+        }
     }
 }
