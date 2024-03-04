@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-using Codice.CM.Client.Differences;
 using UnityEngine;
 using UnityEngine.UI; // Use UnityEngine.UI for the Text component
 
@@ -9,7 +8,6 @@ public class ScoreOnCollision : MonoBehaviour
 {
     private Text scoreText; 
 
-    private bool isCorrectAnswer = false;
 
     void Start()
     {

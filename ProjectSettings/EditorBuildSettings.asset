@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/CosmicWordQuest.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
     path: Assets/Scenes/StartScreen.unity
     guid: 705c25b7fcfc248cb9952723aea8671a
+  - enabled: 1
+    path: Assets/Scenes/CosmicWordQuest.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Leaderboard.unity
     guid: 2a978302e0690473a81bcc59a7ef101c
