@@ -129,13 +129,8 @@ public class GameManager : MonoBehaviour
     {
         // saving data to CSV file
         var filename = Application.dataPath + "/Database/ScoresCSV.csv";
-
-        Debug.Log(filename);
-
         TextWriter textWriter = new StreamWriter(filename,true);
-
         textWriter.WriteLine(player.name + "," + player.score);
-
         textWriter.Close();
     }
 }

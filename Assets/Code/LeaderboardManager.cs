@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using System.Linq;
+using UnityEngine.UI;
 
 public class LeaderboardManager : MonoBehaviour
 {
@@ -9,14 +11,17 @@ public class LeaderboardManager : MonoBehaviour
 
     public TextAsset CSVData;
 
+    public GameObject[] highscoreTexts = new GameObject[5];
+
+    public PlayerData[] sortedList;
+
     // Start is called before the first frame update
     void Start()
     {
         //using CSV file now
 
         //get the data in that file and split it by commas and new lines
-
-        Debug.Log("Got here");
+        InitHighScoreText();
 
         string[] data = CSVData.text.Split(new string[] { ",", "\n"},StringSplitOptions.None);
 
@@ -33,9 +38,43 @@ public class LeaderboardManager : MonoBehaviour
                 score = int.Parse(data[2 *(i+1) + 1]) // score is the next part of the data entry
             };
         }
+        PlayerData[] sortedList = SelectTop5();
+        
+        DisplayTopScores(sortedList);
+
+    }
+
+    void InitHighScoreText(){
+        highscoreTexts[0] = GameObject.FindGameObjectWithTag("Text1");
+        highscoreTexts[1] = GameObject.FindGameObjectWithTag("Text2");
+        highscoreTexts[2] = GameObject.FindGameObjectWithTag("Text3");
+        highscoreTexts[3] = GameObject.FindGameObjectWithTag("Text4");
+        highscoreTexts[4] = GameObject.FindGameObjectWithTag("Text5");
+    }
+
+    //select top 5 players from the player list
+    // the top scores are the last elements of the array
+    PlayerData[] SelectTop5(){
+        sortedList = playerList.players.OrderBy(PlayerData=>PlayerData.score).ToArray();
+
+        return sortedList;
+    }
+
+    void DisplayTopScores(PlayerData[] sortedList){
+        int listLength = sortedList.Length;
+        for(int i=0; i<listLength; i++){
+
+            if(i>4){
+                break; //we cant go further in the highscoreTexts array, but i < listLength is still set
+                // as that list could have less than 5 elements
+            }
+            Debug.Log(listLength-1-i);
+            string name = sortedList[listLength-1-i].name; // take from the end of the array
+            int score = sortedList[listLength-1-i].score;
+            int currentPosition = i+1;
+
+            highscoreTexts[i].GetComponent<Text>().text = currentPosition.ToString() + ". Name = " 
+                + name + "; Score = " +score.ToString();
+        }
     }
 }
-
-
-
-
