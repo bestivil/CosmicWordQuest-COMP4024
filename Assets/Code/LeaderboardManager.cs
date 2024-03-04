@@ -9,6 +9,7 @@ public class LeaderboardManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        /*
         TextAsset textAsset = Resources.Load<TextAsset>("Leaderboard");
         playerList = JsonUtility.FromJson<PlayerDataList>(textAsset.text); 
         List<PlayerData> sortedList = new List<PlayerData>(playerList.players);
@@ -18,6 +19,10 @@ public class LeaderboardManager : MonoBehaviour
         {
             Debug.Log("Name: " + player.name + ", Score: " + player.score);
         }
+
+        */
+
+        //using CSV file now
         
         
     }

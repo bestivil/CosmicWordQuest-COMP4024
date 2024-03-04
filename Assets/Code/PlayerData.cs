@@ -13,5 +13,5 @@ public class PlayerData
 [System.Serializable]
 public class PlayerDataList
 {
-    public List<PlayerData> players;
+    public PlayerData[] players;
 }
