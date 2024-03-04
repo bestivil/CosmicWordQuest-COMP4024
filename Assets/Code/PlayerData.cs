@@ -5,8 +5,8 @@ using UnityEngine;
 [System.Serializable]
 public class PlayerData
 {
-    public int score;
     public string name;
+    public int score;
 }
 
 

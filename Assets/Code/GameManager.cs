@@ -22,8 +22,6 @@ public class GameManager : MonoBehaviour
     public int correctAnswer = 0;
     public PlayerData player = new PlayerData();
 
-    TextAsset csvAsset;
-
     
 
     void Awake()
@@ -129,21 +127,7 @@ public class GameManager : MonoBehaviour
     
     void SaveToFile()
     {
-        /*
-        string json = JsonUtility.ToJson(player);
-        Debug.Log(json); //test print to ensure the name and score are being saved
-        Debug.Log(Application.persistentDataPath);
-
-        string filePath = "Assets/Resources/Leaderboard.json";
-        Directory.CreateDirectory(Path.GetDirectoryName(filePath));
-        Debug.Log("Saving to: " + filePath);
-        using (StreamWriter sw = File.AppendText(filePath))
-        {
-            sw.WriteLine(json);
-        }
-        */
-
-        // using CSV now
+        // saving data to CSV file
         var filename = Application.dataPath + "/Database/ScoresCSV.csv";
 
         Debug.Log(filename);
