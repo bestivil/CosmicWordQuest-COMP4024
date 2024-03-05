@@ -94,7 +94,46 @@ public class ScoreOnCollision : MonoBehaviour
                 UpdateScoreText();
             }
             
-            GameManager.Instance.LevelCompleted();
+            //GameManager.Instance.LevelCompleted();
+            GameManager.Instance.getRandomArray();
+
+            GameObject Planet1Text = GameObject.FindGameObjectWithTag("Planet1Text");
+            GameObject Planet2Text = GameObject.FindGameObjectWithTag("Planet2Text");
+            GameObject Planet3Text = GameObject.FindGameObjectWithTag("Planet3Text");
+            GameObject Planet4Text = GameObject.FindGameObjectWithTag("Planet4Text");
+            GameObject Planet5Text = GameObject.FindGameObjectWithTag("Planet5Text");
+
+            List<GameObject> planetList = new List<GameObject>();
+            planetList.Add(Planet1Text);
+            planetList.Add(Planet2Text);
+            planetList.Add(Planet3Text);
+            planetList.Add(Planet4Text);
+            planetList.Add(Planet5Text);
+
+            GameObject SpaceshipWord = GameObject.FindGameObjectWithTag("SpaceshipWord");
+            
+            if (Planet1Text != null && Planet2Text != null && Planet3Text != null && Planet4Text != null && Planet5Text != null)
+            {
+                /*
+                var languageChoice = StateController.languageChoice;
+
+                Type wordType = typeof(Word);
+                PropertyInfo property = wordType.GetProperty(languageChoice);
+
+                */
+                setupPlanets(planetList);
+
+                //Planet1Text.GetComponent<Text>().text = (string)property.GetValue(StateController.wordList[GameManager.Instance.randomNumbersArray[0]]);
+            }
+
+            Debug.Log("correct answer index = " + GameManager.Instance.correctAnswer);
+            Debug.Log("English word = " + StateController.wordList[GameManager.Instance.correctAnswer].English);
+
+            Debug.Log("Spaceship word = " + SpaceshipWord);
+            Debug.Log("planet5 text = " + Planet5Text);
+
+            SpaceshipWord.GetComponent<Text>().text = StateController.wordList[GameManager.Instance.correctAnswer].English;
+
         }
     }
 
