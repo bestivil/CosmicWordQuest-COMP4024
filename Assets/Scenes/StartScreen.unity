@@ -1212,6 +1212,14 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!81 &558501025
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558501021}
+  m_Enabled: 1
 --- !u!1 &573627789
 GameObject:
   m_ObjectHideFlags: 0
@@ -1973,6 +1981,7 @@ GameObject:
   - component: {fileID: 918019114}
   - component: {fileID: 918019113}
   - component: {fileID: 918019112}
+  - component: {fileID: 918019115}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1987,7 +1996,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918019111}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &918019113
 Camera:
   m_ObjectHideFlags: 0
@@ -2054,6 +2063,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &918019115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918019111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1863f68943f549dda572273f595d185, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1021849028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3409,7 +3430,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5576094452943215343, guid: 963cbbcf5fa5046ecb300a85e08a6632, type: 3}
       propertyPath: m_SortingLayer
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5576094452943215343, guid: 963cbbcf5fa5046ecb300a85e08a6632, type: 3}
       propertyPath: m_SortingLayerID
@@ -3422,6 +3443,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 753899770008723726, guid: 963cbbcf5fa5046ecb300a85e08a6632, type: 3}
       insertIndex: -1
       addedObject: {fileID: 558501022}
+    - targetCorrespondingSourceObject: {fileID: 753899770008723726, guid: 963cbbcf5fa5046ecb300a85e08a6632, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 558501025}
   m_SourcePrefab: {fileID: 100100000, guid: 963cbbcf5fa5046ecb300a85e08a6632, type: 3}
 --- !u!1 &1737653061
 GameObject:
