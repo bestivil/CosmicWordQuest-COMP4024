@@ -14,17 +14,91 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
+    x: 952.5
+    y: 190
+    width: 321.5
+    height: 562
+  m_ShowMode: 0
+  m_Title: Test Runner
+  m_RootView: {fileID: 4}
+  m_MinSize: {x: 100, y: 121}
+  m_MaxSize: {x: 4000, y: 4021}
+  m_Maximized: 0
+--- !u!114 &2
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PixelRect:
+    serializedVersion: 2
     x: 0
-    y: 50.666668
-    width: 1706.6667
-    height: 968
+    y: 42
+    width: 1280
+    height: 710
   m_ShowMode: 4
-  m_Title: Inspector
-  m_RootView: {fileID: 2}
+  m_Title: Project
+  m_RootView: {fileID: 5}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
---- !u!114 &2
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: TestRunnerWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 321.5
+    height: 562
+  m_MinSize: {x: 100, y: 121}
+  m_MaxSize: {x: 4000, y: 4021}
+  m_ActualView: {fileID: 15}
+  m_Panes:
+  - {fileID: 15}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &4
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 3}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 321.5
+    height: 562
+  m_MinSize: {x: 100, y: 121}
+  m_MaxSize: {x: 4000, y: 4021}
+  vertical: 0
+  controlID: 4153
+--- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37,9 +111,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 3}
-  - {fileID: 5}
-  - {fileID: 4}
+  - {fileID: 6}
+  - {fileID: 8}
+  - {fileID: 7}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -52,7 +126,7 @@ MonoBehaviour:
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
---- !u!114 &3
+--- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -74,7 +148,7 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
---- !u!114 &4
+--- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,7 +169,7 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
---- !u!114 &5
+--- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -108,8 +182,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 6}
-  - {fileID: 11}
+  - {fileID: 9}
+  - {fileID: 14}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -120,7 +194,7 @@ MonoBehaviour:
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
   controlID: 45
---- !u!114 &6
+--- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,8 +207,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 7}
   - {fileID: 10}
+  - {fileID: 13}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -145,7 +219,8 @@ MonoBehaviour:
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
   controlID: 46
---- !u!114 &7
+
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,8 +233,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 8}
-  - {fileID: 9}
+  - {fileID: 11}
+  - {fileID: 12}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -170,7 +245,7 @@ MonoBehaviour:
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
   controlID: 47
---- !u!114 &8
+--- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -187,16 +262,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 306
-    height: 624.6667
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 13}
+
+    width: 229.5
+    height: 449.5
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 17}
   m_Panes:
-  - {fileID: 13}
+  - {fileID: 17}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &9
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -213,18 +289,19 @@ MonoBehaviour:
     serializedVersion: 2
     x: 306
     y: 0
-    width: 994.6666
-    height: 624.6667
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 14}
+
+    width: 746
+    height: 449.5
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 18}
   m_Panes:
-  - {fileID: 14}
-  - {fileID: 12}
-  - {fileID: 15}
+  - {fileID: 18}
+  - {fileID: 16}
+  - {fileID: 19}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &10
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -245,13 +322,13 @@ MonoBehaviour:
     height: 293.3333
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 20}
   m_Panes:
-  - {fileID: 16}
-  - {fileID: 17}
+  - {fileID: 20}
+  - {fileID: 21}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &11
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -268,16 +345,838 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1300.6666
     y: 0
-    width: 406
-    height: 918
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 18}
+
+    width: 304.5
+    height: 660
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 22}
   m_Panes:
-  - {fileID: 18}
+  - {fileID: 22}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &12
+--- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Test Runner
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 952.5
+    y: 190
+    width: 321.5
+    height: 541
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+  m_Spl:
+    ID: 4183
+    splitterInitialOffset: 0
+    currentActiveSplitter: -1
+    realSizes:
+    - 353
+    - 118
+    relativeSizes:
+    - 0.75
+    - 0.25
+    minSizes:
+    - 32
+    - 32
+    maxSizes:
+    - 0
+    - 0
+    lastTotalSize: 471
+    splitSize: 6
+    xOffset: 0
+    m_Version: 1
+    oldRealSizes: 
+    oldMinSizes: 
+    oldMaxSizes: 
+    oldSplitSize: 0
+  m_TestTypeToolbarIndex: 1
+  m_PlayModeTestListGUI:
+    m_Window: {fileID: 0}
+    m_NewResultList: []
+    m_ResultText: 
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories: []
+    m_SelectedOption: 0
+  m_EditModeTestListGUI:
+    m_Window: {fileID: 15}
+    m_NewResultList:
+    - id: 1000
+      uniqueId: '[EnglishLearner][suite]'
+      name: EnglishLearner
+      fullName: EnglishLearner
+      resultStatus: 2
+      duration: 0.4008898
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1033
+      uniqueId: '[TestsPlay][C:/COMP4024-G13/Library/ScriptAssemblies/TestsPlay.dll][suite]'
+      name: TestsPlay.dll
+      fullName: C:/COMP4024-G13/Library/ScriptAssemblies/TestsPlay.dll
+      resultStatus: 2
+      duration: 0.3261658
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[EnglishLearner][suite]'
+    - id: 1001
+      uniqueId: TestsPlay.dll/[TestsPlay][BackButtonExists][suite]
+      name: BackButtonExists
+      fullName: BackButtonExists
+      resultStatus: 2
+      duration: 0.0501145
+      messages: One or more child tests had errors
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1033
+      parentUniqueId: '[TestsPlay][C:/COMP4024-G13/Library/ScriptAssemblies/TestsPlay.dll][suite]'
+    - id: 1002
+      uniqueId: TestsPlay.dll/BackButtonExists/[TestsPlay][BackButtonExists.BackButtonIsWithinGameBounds]
+      name: BackButtonIsWithinGameBounds
+      fullName: BackButtonExists.BackButtonIsWithinGameBounds
+      resultStatus: 2
+      duration: 0.0287031
+      messages: "SetUp :   BackButton with tag 'BackButton' not found in the scene.\r\n 
+        Expected: not null\r\n  But was:  null\r\n"
+      output: 
+      stacktrace: 'at BackButtonExists.SetUp () [0x00010] in C:\COMP4024-G13\Assets\Tests\TestsPlay\BackButtonExists.cs:15
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: TestsPlay.dll/[TestsPlay][BackButtonExists][suite]
+    - id: 1005
+      uniqueId: TestsPlay.dll/[TestsPlay][BulletExists][suite]
+      name: BulletExists
+      fullName: BulletExists
+      resultStatus: 2
+      duration: 0.0212252
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1033
+      parentUniqueId: '[TestsPlay][C:/COMP4024-G13/Library/ScriptAssemblies/TestsPlay.dll][suite]'
+    - id: 1006
+      uniqueId: TestsPlay.dll/BulletExists/[TestsPlay][BulletExists.BulletVisible]
+      name: BulletVisible
+      fullName: BulletExists.BulletVisible
+      resultStatus: 2
+      duration: 0.0164585
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 
+      stacktrace: "  at BulletExists.IsVisibleByCamera () [0x00000] in C:\\COMP4024-G13\\Assets\\Tests\\TestsPlay\\BulletExist.cs:28
+        \r\n  at BulletExists+<BulletVisible>d__2.MoveNext () [0x0001e] in C:\\COMP4024-G13\\Assets\\Tests\\TestsPlay\\BulletExist.cs:20
+        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
+        in .\\Library\\PackageCache\\com.unity.test-framework@1.1.33\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:46 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: TestsPlay.dll/[TestsPlay][BulletExists][suite]
+    - id: 1003
+      uniqueId: TestsPlay.dll/[TestsPlay][BulletMovementTest][suite]
+      name: BulletMovementTest
+      fullName: BulletMovementTest
+      resultStatus: 1
+      duration: 0.0299051
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1033
+      parentUniqueId: '[TestsPlay][C:/COMP4024-G13/Library/ScriptAssemblies/TestsPlay.dll][suite]'
+    - id: 1004
+      uniqueId: TestsPlay.dll/BulletMovementTest/[TestsPlay][BulletMovementTest.BulletMaintainsSameXCoordinate]
+      name: BulletMaintainsSameXCoordinate
+      fullName: BulletMovementTest.BulletMaintainsSameXCoordinate
+      resultStatus: 1
+      duration: 0.023662
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1003
+      parentUniqueId: TestsPlay.dll/[TestsPlay][BulletMovementTest][suite]
+    - id: 1007
+      uniqueId: TestsPlay.dll/[TestsPlay][LeaderboardButtonExists][suite]
+      name: LeaderboardButtonExists
+      fullName: LeaderboardButtonExists
+      resultStatus: 2
+      duration: 0.0092963
+      messages: One or more child tests had errors
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1033
+      parentUniqueId: '[TestsPlay][C:/COMP4024-G13/Library/ScriptAssemblies/TestsPlay.dll][suite]'
+    - id: 1008
+      uniqueId: TestsPlay.dll/LeaderboardButtonExists/[TestsPlay][LeaderboardButtonExists.LeaderboardButtonIsWithinGameBounds]
+      name: LeaderboardButtonIsWithinGameBounds
+      fullName: LeaderboardButtonExists.LeaderboardButtonIsWithinGameBounds
+      resultStatus: 2
+      duration: 0.0042586
+      messages: "SetUp :   LeaderboardButton with tag 'LeaderboardButton' not found
+        in the scene.\r\n  Expected: not null\r\n  But was:  null\r\n"
+      output: 
+      stacktrace: 'at LeaderboardButtonExists.SetUp () [0x00010] in C:\COMP4024-G13\Assets\Tests\TestsPlay\LeaderboardButtonExists.cs:15
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: TestsPlay.dll/[TestsPlay][LeaderboardButtonExists][suite]
+    - id: 1025
+      uniqueId: TestsPlay.dll/[TestsPlay][OutBoundsTest][suite]
+      name: OutBoundsTest
+      fullName: OutBoundsTest
+      resultStatus: 2
+      duration: 0.0102277
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1033
+      parentUniqueId: '[TestsPlay][C:/COMP4024-G13/Library/ScriptAssemblies/TestsPlay.dll][suite]'
+    - id: 1026
+      uniqueId: TestsPlay.dll/OutBoundsTest/[TestsPlay][OutBoundsTest.SpaceshipDoesNotGoOutOfBounds]
+      name: SpaceshipDoesNotGoOutOfBounds
+      fullName: OutBoundsTest.SpaceshipDoesNotGoOutOfBounds
+      resultStatus: 2
+      duration: 0.004773
+      messages: 'SetUp : System.NullReferenceException : Object reference not set
+        to an instance of an object'
+      output: 
+      stacktrace: "--SetUp\r\n  at OutBoundsTest.SetUp () [0x00010] in C:\\COMP4024-G13\\Assets\\Tests\\TestsPlay\\spaceshipOutbound.cs:17
+        \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
+        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x0006a] in <bfbc89a04b6b4dd49c3614d03fc31ce8>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1025
+      parentUniqueId: TestsPlay.dll/[TestsPlay][OutBoundsTest][suite]
+    - id: 1009
+      uniqueId: TestsPlay.dll/[TestsPlay][Planet1exists][suite]
+      name: Planet1exists
+      fullName: Planet1exists
+      resultStatus: 2
+      duration: 0.0151615
+      messages: One or more child tests had errors
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1033
+      parentUniqueId: '[TestsPlay][C:/COMP4024-G13/Library/ScriptAssemblies/TestsPlay.dll][suite]'
+    - id: 1010
+      uniqueId: TestsPlay.dll/Planet1exists/[TestsPlay][Planet1exists.PlanetIsWithinGameBounds]
+      name: PlanetIsWithinGameBounds
+      fullName: Planet1exists.PlanetIsWithinGameBounds
+      resultStatus: 2
+      duration: 0.0096071
+      messages: "SetUp :   Planet with tag 'Planet1' not found in the scene.\r\n 
+        Expected: not null\r\n  But was:  null\r\n"
+      output: 
+      stacktrace: 'at Planet1exists.SetUp () [0x00010] in C:\COMP4024-G13\Assets\Tests\TestsPlay\Planet1exists.cs:15
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: TestsPlay.dll/[TestsPlay][Planet1exists][suite]
+    - id: 1011
+      uniqueId: TestsPlay.dll/[TestsPlay][Planet2exists][suite]
+      name: Planet2exists
+      fullName: Planet2exists
+      resultStatus: 2
+      duration: 0.014227
+      messages: One or more child tests had errors
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1033
+      parentUniqueId: '[TestsPlay][C:/COMP4024-G13/Library/ScriptAssemblies/TestsPlay.dll][suite]'
+    - id: 1012
+      uniqueId: TestsPlay.dll/Planet2exists/[TestsPlay][Planet2exists.PlanetIsWithinGameBounds]
+      name: PlanetIsWithinGameBounds
+      fullName: Planet2exists.PlanetIsWithinGameBounds
+      resultStatus: 2
+      duration: 0.0051933
+      messages: "SetUp :   Planet with tag 'Planet2' not found in the scene.\r\n 
+        Expected: not null\r\n  But was:  null\r\n"
+      output: 
+      stacktrace: 'at Planet2exists.SetUp () [0x00010] in C:\COMP4024-G13\Assets\Tests\TestsPlay\Planet2exists.cs:15
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1011
+      parentUniqueId: TestsPlay.dll/[TestsPlay][Planet2exists][suite]
+    - id: 1013
+      uniqueId: TestsPlay.dll/[TestsPlay][Planet3exi][suite]
+      name: Planet3exi
+      fullName: Planet3exi
+      resultStatus: 2
+      duration: 0.0119006
+      messages: One or more child tests had errors
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1033
+      parentUniqueId: '[TestsPlay][C:/COMP4024-G13/Library/ScriptAssemblies/TestsPlay.dll][suite]'
+    - id: 1014
+      uniqueId: TestsPlay.dll/Planet3exi/[TestsPlay][Planet3exi.PlanetIsWithinGameBounds]
+      name: PlanetIsWithinGameBounds
+      fullName: Planet3exi.PlanetIsWithinGameBounds
+      resultStatus: 2
+      duration: 0.0050661
+      messages: "SetUp :   Planet with tag 'Planet3' not found in the scene.\r\n 
+        Expected: not null\r\n  But was:  null\r\n"
+      output: 
+      stacktrace: 'at Planet3exi.SetUp () [0x00010] in C:\COMP4024-G13\Assets\Tests\TestsPlay\Planet3exi.cs:15
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1013
+      parentUniqueId: TestsPlay.dll/[TestsPlay][Planet3exi][suite]
+    - id: 1015
+      uniqueId: TestsPlay.dll/[TestsPlay][Planet4exists][suite]
+      name: Planet4exists
+      fullName: Planet4exists
+      resultStatus: 2
+      duration: 0.0117889
+      messages: One or more child tests had errors
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1033
+      parentUniqueId: '[TestsPlay][C:/COMP4024-G13/Library/ScriptAssemblies/TestsPlay.dll][suite]'
+    - id: 1016
+      uniqueId: TestsPlay.dll/Planet4exists/[TestsPlay][Planet4exists.PlanetIsWithinGameBounds]
+      name: PlanetIsWithinGameBounds
+      fullName: Planet4exists.PlanetIsWithinGameBounds
+      resultStatus: 2
+      duration: 0.0053361
+      messages: "SetUp :   Planet with tag 'Planet4' not found in the scene.\r\n 
+        Expected: not null\r\n  But was:  null\r\n"
+      output: 
+      stacktrace: 'at Planet4exists.SetUp () [0x00010] in C:\COMP4024-G13\Assets\Tests\TestsPlay\Planet4exists.cs:15
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1015
+      parentUniqueId: TestsPlay.dll/[TestsPlay][Planet4exists][suite]
+    - id: 1017
+      uniqueId: TestsPlay.dll/[TestsPlay][Planet5exists][suite]
+      name: Planet5exists
+      fullName: Planet5exists
+      resultStatus: 2
+      duration: 0.0128692
+      messages: One or more child tests had errors
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1033
+      parentUniqueId: '[TestsPlay][C:/COMP4024-G13/Library/ScriptAssemblies/TestsPlay.dll][suite]'
+    - id: 1018
+      uniqueId: TestsPlay.dll/Planet5exists/[TestsPlay][Planet5exists.PlanetIsWithinGameBounds]
+      name: PlanetIsWithinGameBounds
+      fullName: Planet5exists.PlanetIsWithinGameBounds
+      resultStatus: 2
+      duration: 0.0054902
+      messages: "SetUp :   Planet with tag 'Planet5' not found in the scene.\r\n 
+        Expected: not null\r\n  But was:  null\r\n"
+      output: 
+      stacktrace: 'at Planet5exists.SetUp () [0x00010] in C:\COMP4024-G13\Assets\Tests\TestsPlay\Planet5exists.cs:15
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1017
+      parentUniqueId: TestsPlay.dll/[TestsPlay][Planet5exists][suite]
+    - id: 1019
+      uniqueId: TestsPlay.dll/[TestsPlay][QuitButtonExists][suite]
+      name: QuitButtonExists
+      fullName: QuitButtonExists
+      resultStatus: 1
+      duration: 0.0203056
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1033
+      parentUniqueId: '[TestsPlay][C:/COMP4024-G13/Library/ScriptAssemblies/TestsPlay.dll][suite]'
+    - id: 1020
+      uniqueId: TestsPlay.dll/QuitButtonExists/[TestsPlay][QuitButtonExists.QuitButtonIsWithinGameBounds]
+      name: QuitButtonIsWithinGameBounds
+      fullName: QuitButtonExists.QuitButtonIsWithinGameBounds
+      resultStatus: 1
+      duration: 0.0118128
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1019
+      parentUniqueId: TestsPlay.dll/[TestsPlay][QuitButtonExists][suite]
+    - id: 1021
+      uniqueId: TestsPlay.dll/[TestsPlay][SpaceExists][suite]
+      name: SpaceExists
+      fullName: SpaceExists
+      resultStatus: 2
+      duration: 0.0204536
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1033
+      parentUniqueId: '[TestsPlay][C:/COMP4024-G13/Library/ScriptAssemblies/TestsPlay.dll][suite]'
+    - id: 1022
+      uniqueId: TestsPlay.dll/SpaceExists/[TestsPlay][SpaceExists.SpaceVisible]
+      name: SpaceVisible
+      fullName: SpaceExists.SpaceVisible
+      resultStatus: 2
+      duration: 0.015124
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 
+      stacktrace: "  at SpaceExists.IsVisibleByCamera () [0x00000] in C:\\COMP4024-G13\\Assets\\Tests\\TestsPlay\\SpaceExist.cs:28
+        \r\n  at SpaceExists+<SpaceVisible>d__2.MoveNext () [0x0001e] in C:\\COMP4024-G13\\Assets\\Tests\\TestsPlay\\SpaceExist.cs:20
+        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
+        in .\\Library\\PackageCache\\com.unity.test-framework@1.1.33\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:46 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1021
+      parentUniqueId: TestsPlay.dll/[TestsPlay][SpaceExists][suite]
+    - id: 1023
+      uniqueId: TestsPlay.dll/[TestsPlay][SpaceshipExists][suite]
+      name: SpaceshipExists
+      fullName: SpaceshipExists
+      resultStatus: 2
+      duration: 0.0111219
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1033
+      parentUniqueId: '[TestsPlay][C:/COMP4024-G13/Library/ScriptAssemblies/TestsPlay.dll][suite]'
+    - id: 1024
+      uniqueId: TestsPlay.dll/SpaceshipExists/[TestsPlay][SpaceshipExists.SpaceshipVisible]
+      name: SpaceshipVisible
+      fullName: SpaceshipExists.SpaceshipVisible
+      resultStatus: 2
+      duration: 0.0071063
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 
+      stacktrace: "  at SpaceshipExists.IsVisibleByCamera () [0x00000] in C:\\COMP4024-G13\\Assets\\Tests\\TestsPlay\\SpaceshipExists.cs:28
+        \r\n  at SpaceshipExists+<SpaceshipVisible>d__2.MoveNext () [0x0001e] in
+        C:\\COMP4024-G13\\Assets\\Tests\\TestsPlay\\SpaceshipExists.cs:20 \r\n  at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a]
+        in .\\Library\\PackageCache\\com.unity.test-framework@1.1.33\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:46 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1023
+      parentUniqueId: TestsPlay.dll/[TestsPlay][SpaceshipExists][suite]
+    - id: 1027
+      uniqueId: TestsPlay.dll/[TestsPlay][SpaceshipMovementTests][suite]
+      name: SpaceshipMovementTests
+      fullName: SpaceshipMovementTests
+      resultStatus: 2
+      duration: 0.0386942
+      messages: One or more child tests had errors
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1033
+      parentUniqueId: '[TestsPlay][C:/COMP4024-G13/Library/ScriptAssemblies/TestsPlay.dll][suite]'
+    - id: 1028
+      uniqueId: TestsPlay.dll/SpaceshipMovementTests/[TestsPlay][SpaceshipMovementTests.SpaceshipMovementWithEnumeratorPasses]
+      name: SpaceshipMovementWithEnumeratorPasses
+      fullName: SpaceshipMovementTests.SpaceshipMovementWithEnumeratorPasses
+      resultStatus: 2
+      duration: 0.030856
+      messages: 'TearDown : Unhandled log message: ''[Error] Destroy may not be called
+        from edit mode! Use DestroyImmediate instead.
+
+        Destroying an object
+        in edit mode destroys it permanently.''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'Destroy may not be called from edit mode! Use DestroyImmediate instead.
+
+        Destroying
+        an object in edit mode destroys it permanently.
+
+'
+      stacktrace: 'UnityEngine.Object:Destroy (UnityEngine.Object)
+
+        SpaceshipMovementTests:Teardown
+        () (at Assets/Tests/TestsPlay/SpaceshipTests.cs:26)
+
+        System.Reflection.MethodBase:Invoke
+        (object,object[])
+
+        NUnit.Framework.Internal.Reflect:InvokeMethod
+        (System.Reflection.MethodInfo,object,object[])
+
+        NUnit.Framework.Internal.Reflect:InvokeMethod
+        (System.Reflection.MethodInfo,object)
+
+        UnityEditor.EditorApplication:Internal_CallUpdateFunctions
+        ()
+
+        
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1027
+      parentUniqueId: TestsPlay.dll/[TestsPlay][SpaceshipMovementTests][suite]
+    - id: 1029
+      uniqueId: TestsPlay.dll/[TestsPlay][StartButtonExists][suite]
+      name: StartButtonExists
+      fullName: StartButtonExists
+      resultStatus: 1
+      duration: 0.0220685
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1033
+      parentUniqueId: '[TestsPlay][C:/COMP4024-G13/Library/ScriptAssemblies/TestsPlay.dll][suite]'
+    - id: 1030
+      uniqueId: TestsPlay.dll/StartButtonExists/[TestsPlay][StartButtonExists.StartButtonIsWithinGameBounds]
+      name: StartButtonIsWithinGameBounds
+      fullName: StartButtonExists.StartButtonIsWithinGameBounds
+      resultStatus: 1
+      duration: 0.0136796
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1029
+      parentUniqueId: TestsPlay.dll/[TestsPlay][StartButtonExists][suite]
+    - id: 1031
+      uniqueId: TestsPlay.dll/[TestsPlay][TutorialButtonExists][suite]
+      name: TutorialButtonExists
+      fullName: TutorialButtonExists
+      resultStatus: 1
+      duration: 0.0219435
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1033
+      parentUniqueId: '[TestsPlay][C:/COMP4024-G13/Library/ScriptAssemblies/TestsPlay.dll][suite]'
+    - id: 1032
+      uniqueId: TestsPlay.dll/TutorialButtonExists/[TestsPlay][TutorialButtonExists.TutorialButtonIsWithinGameBounds]
+      name: TutorialButtonIsWithinGameBounds
+      fullName: TutorialButtonExists.TutorialButtonIsWithinGameBounds
+      resultStatus: 1
+      duration: 0.0128057
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1031
+      parentUniqueId: TestsPlay.dll/[TestsPlay][TutorialButtonExists][suite]
+    m_ResultText: 'SpaceshipExists (0.011s)
+
+      ---
+
+      One or more child tests
+      had errors'
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 195}
+      m_SelectedIDs: 7f662685
+      m_LastClickedID: -2061080961
+      m_ExpandedIDs: a723e780d01974847f6626858b20fc9a6bd51ca0ef5799a09c55f7a57b611dbc56fa80e986da75ec290e82fb8ac19a1a49be0c230aa86e3b621dc96a3d2f7b6e50163e70c0032672ffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -375,7 +1274,7 @@ MonoBehaviour:
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &13
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -396,9 +1295,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 80.66667
-    width: 305
-    height: 603.6667
+    y: 72
+    width: 228.5
+    height: 428.5
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -412,9 +1311,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 6e650000
-      m_LastClickedID: 25966
-      m_ExpandedIDs: 7efaffff18650000426500005c650000866500008a650000d2650000
+      m_SelectedIDs: 82670000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 5cd5ffffd4d8ffff26d9ffff1cdcfffffedeffff1adfffffd2e0ffff4ce2ffffa6e3ffff80e5ffff6ce6ffff50e7ffff86e8ffffd4e9ffffd4eaffff22ecffff2eedffff72eeffffccefffff16f2ffff4af3ffff4af9ffff06fbffffda670000a8680000006c0000ce6c0000b87b0000867c00000c7f0000568000009e810000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -438,7 +1337,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &14
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -458,10 +1357,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 306
-    y: 80.66667
-    width: 992.6666
-    height: 603.6667
+    x: 229.5
+    y: 72
+    width: 744
+    height: 428.5
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -807,9 +1706,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.15735261, y: -0.023662059, z: 0.0034152388}
+    m_Target: {x: 1073.3156, y: 646.44086, z: -5.4037943}
     speed: 2
-    m_Value: {x: 1670.5392, y: 865.259, z: -5.5816936}
+    m_Value: {x: 1073.3156, y: 646.44086, z: -5.4037943}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -859,9 +1758,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 9.658478
+    m_Target: 788.647
     speed: 2
-    m_Value: 560.4089
+    m_Value: 788.647
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -886,7 +1785,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &15
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -920,7 +1819,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
---- !u!114 &16
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -941,9 +1840,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 705.3334
-    width: 1299.6666
-    height: 272.3333
+    y: 521.5
+    width: 974.5
+    height: 189.5
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -965,7 +1864,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -973,16 +1872,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\User\Desktop\Software Engineering Management\COMP4024-G13
+  m_LastProjectPath: C:\COMP4024-G13
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 2c670000
-    m_LastClickedID: 26412
-    m_ExpandedIDs: 000000002c6700002e67000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 143}
+    m_SelectedIDs: 3c670000
+    m_LastClickedID: 26428
+    m_ExpandedIDs: 00000000066700000867000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -998,7 +1897,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 10}
+      m_ClientGUIView: {fileID: 13}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -1010,7 +1909,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002c6700002e670000
+    m_ExpandedIDs: 000000000667000008670000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1037,7 +1936,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1054,7 +1953,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 10}
+      m_ClientGUIView: {fileID: 13}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1066,7 +1965,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
---- !u!114 &17
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1100,7 +1999,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
---- !u!114 &18
+--- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1120,10 +2019,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1300.6667
-    y: 80.66667
-    width: 405
-    height: 897
+    x: 975.5
+    y: 72
+    width: 303.5
+    height: 639
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
