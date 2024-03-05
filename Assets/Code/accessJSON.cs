@@ -37,9 +37,6 @@ public class accessJSON : MonoBehaviour
         StateController.wordList = wordListWrapper.words; // access this word list in other classes
 
         
-        //Debug.Log(StateController.languageChoice);
-
-        
 
 
     }

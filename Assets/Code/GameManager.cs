@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -114,14 +115,24 @@ public class GameManager : MonoBehaviour
         
     }
 
-
+    //generates a random array of words to pick from the word list
+    //want to make sure they are unique
     void getRandomArray()
     {
         List<int> randIntArray = new List<int>();
         while(randIntArray.Count < 5){
-            randIntArray.Add(UnityEngine.Random.Range(1, 149));
+            var uniqueRandom = Random.Range(0,150);
+            
+            // this is to make sure the number we generate is not already inside of this array
+            while(randIntArray.Contains(uniqueRandom)){
+                uniqueRandom = Random.Range(0,150);
+            }
+            randIntArray.Add(uniqueRandom);
+            
         }
         randomNumbersArray = randIntArray.ToArray();
+        //store the index to which we find the word in list
+        //it is exclusive for array Length as being max value
         correctAnswer = randomNumbersArray[Random.Range(0, randomNumbersArray.Length)];
     }
     

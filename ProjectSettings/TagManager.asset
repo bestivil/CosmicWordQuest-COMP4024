@@ -25,6 +25,11 @@ TagManager:
   - Planet4Text
   - Planet5Text
   - SpaceshipWord
+  - music
+  - Bullet
+  - Space
+  - TutorialButton
+  - QuitButton
   layers:
   - Default
   - TransparentFX

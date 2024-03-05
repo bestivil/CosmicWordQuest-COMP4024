@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.UI; // Use UnityEngine.UI for the Text component
+using UnityEngine.UI;
 
 public class ExplosionSound : MonoBehaviour
 {

@@ -19,6 +19,8 @@ public class StartGame : MonoBehaviour
 
         StateController.languageChoice = toggle.name; //set the language choice and retrieve in other scenes
 
+        Debug.Log("language choice = " + StateController.languageChoice);
+
         SceneManager.LoadScene("CosmicWordQuest"); // Load the game scene
     }
 }

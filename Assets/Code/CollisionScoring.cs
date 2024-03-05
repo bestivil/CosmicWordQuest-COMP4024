@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 using UnityEngine.UI; // Use UnityEngine.UI for the Text component
 
@@ -24,15 +27,37 @@ public class ScoreOnCollision : MonoBehaviour
         GameObject Planet3Text = GameObject.FindGameObjectWithTag("Planet3Text");
         GameObject Planet4Text = GameObject.FindGameObjectWithTag("Planet4Text");
         GameObject Planet5Text = GameObject.FindGameObjectWithTag("Planet5Text");
+
+        List<GameObject> planetList = new List<GameObject>();
+        planetList.Add(Planet1Text);
+        planetList.Add(Planet2Text);
+        planetList.Add(Planet3Text);
+        planetList.Add(Planet4Text);
+        planetList.Add(Planet5Text);
+
         GameObject SpaceshipWord = GameObject.FindGameObjectWithTag("SpaceshipWord");
+        
         if (Planet1Text != null && Planet2Text != null && Planet3Text != null && Planet4Text != null && Planet5Text != null)
         {
-            Planet1Text.GetComponent<Text>().text = StateController.wordList[GameManager.Instance.randomNumbersArray[0]].French; // to be changed to StateController.LanguageChoice
-            Planet2Text.GetComponent<Text>().text = StateController.wordList[GameManager.Instance.randomNumbersArray[1]].French;
-            Planet3Text.GetComponent<Text>().text = StateController.wordList[GameManager.Instance.randomNumbersArray[2]].French;
-            Planet4Text.GetComponent<Text>().text = StateController.wordList[GameManager.Instance.randomNumbersArray[3]].French;
-            Planet5Text.GetComponent<Text>().text = StateController.wordList[GameManager.Instance.randomNumbersArray[4]].French;
+            /*
+            var languageChoice = StateController.languageChoice;
+
+            Type wordType = typeof(Word);
+            PropertyInfo property = wordType.GetProperty(languageChoice);
+
+            */
+            setupPlanets(planetList);
+
+            //Planet1Text.GetComponent<Text>().text = (string)property.GetValue(StateController.wordList[GameManager.Instance.randomNumbersArray[0]]);
         }
+
+
+        Debug.Log("correct answer index = " + GameManager.Instance.correctAnswer);
+        Debug.Log("English word = " + StateController.wordList[GameManager.Instance.correctAnswer].English);
+
+        Debug.Log("Spaceship word = " + SpaceshipWord);
+        Debug.Log("planet5 text = " + Planet5Text);
+
         SpaceshipWord.GetComponent<Text>().text = StateController.wordList[GameManager.Instance.correctAnswer].English;
     
         
@@ -81,5 +106,43 @@ public class ScoreOnCollision : MonoBehaviour
             scoreText.text = "Score: " + GameManager.Instance.liveScore; 
             
         }
+    }
+
+    void setupPlanets(List<GameObject> planetList){
+        switch(StateController.languageChoice){
+            case "French":
+                setupPlanetsFrench(planetList);
+                break;
+            case "Spanish":
+                setupPlanetsSpanish(planetList);
+                break;
+            case "Italian":
+                setupPlanetsItalian(planetList);
+                break;
+        }
+    }
+
+    void setupPlanetsFrench(List<GameObject> planetList){
+            planetList[0].GetComponent<Text>().text = StateController.wordList[GameManager.Instance.randomNumbersArray[0]].French;
+            planetList[1].GetComponent<Text>().text = StateController.wordList[GameManager.Instance.randomNumbersArray[1]].French;
+            planetList[2].GetComponent<Text>().text = StateController.wordList[GameManager.Instance.randomNumbersArray[2]].French;
+            planetList[3].GetComponent<Text>().text = StateController.wordList[GameManager.Instance.randomNumbersArray[3]].French;
+            planetList[4].GetComponent<Text>().text = StateController.wordList[GameManager.Instance.randomNumbersArray[4]].French;
+    }
+
+    void setupPlanetsSpanish(List<GameObject> planetList){
+            planetList[0].GetComponent<Text>().text = StateController.wordList[GameManager.Instance.randomNumbersArray[0]].Spanish;
+            planetList[1].GetComponent<Text>().text = StateController.wordList[GameManager.Instance.randomNumbersArray[1]].Spanish;
+            planetList[2].GetComponent<Text>().text = StateController.wordList[GameManager.Instance.randomNumbersArray[2]].Spanish;
+            planetList[3].GetComponent<Text>().text = StateController.wordList[GameManager.Instance.randomNumbersArray[3]].Spanish;
+            planetList[4].GetComponent<Text>().text = StateController.wordList[GameManager.Instance.randomNumbersArray[4]].Spanish;
+    }
+
+    void setupPlanetsItalian(List<GameObject> planetList){
+            planetList[0].GetComponent<Text>().text = StateController.wordList[GameManager.Instance.randomNumbersArray[0]].Italian;
+            planetList[1].GetComponent<Text>().text = StateController.wordList[GameManager.Instance.randomNumbersArray[1]].Italian;
+            planetList[2].GetComponent<Text>().text = StateController.wordList[GameManager.Instance.randomNumbersArray[2]].Italian;
+            planetList[3].GetComponent<Text>().text = StateController.wordList[GameManager.Instance.randomNumbersArray[3]].Italian;
+            planetList[4].GetComponent<Text>().text = StateController.wordList[GameManager.Instance.randomNumbersArray[4]].Italian;
     }
 }
