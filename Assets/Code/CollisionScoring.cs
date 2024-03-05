@@ -6,8 +6,7 @@ using UnityEngine.UI; // Use UnityEngine.UI for the Text component
 
 public class ScoreOnCollision : MonoBehaviour
 {
-    private Text scoreText; 
-
+    private Text scoreText;
 
     void Start()
     {

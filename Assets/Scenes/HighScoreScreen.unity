@@ -232,6 +232,11 @@ MonoBehaviour:
   currentLevelTime: 10
   scoreUser: 
   liveScore: 0
+  randomNumbersArray: 
+  correctAnswer: 0
+  player:
+    score: 0
+    name: 
 --- !u!1 &267212398
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,6 +581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputField: {fileID: 0}
+  csvFile: {fileID: 4900000, guid: 0d1801e42f62f0b499ad0b33d0d574e2, type: 3}
 --- !u!225 &655024117
 CanvasGroup:
   m_ObjectHideFlags: 0

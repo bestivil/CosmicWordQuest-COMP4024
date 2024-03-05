@@ -57,7 +57,6 @@ public class GameManager : MonoBehaviour
         player.name = name;
         SaveToFile();
         
-        
     }
 
     public void LevelCompleted()
@@ -139,15 +138,10 @@ public class GameManager : MonoBehaviour
     
     void SaveToFile()
     {
-        string json = JsonUtility.ToJson(player);
-        Debug.Log(json); //test print to ensure the name and score are being saved
-
-        string filePath = "Assets/Code/Leaderboard.json";
-        Directory.CreateDirectory(Path.GetDirectoryName(filePath));
-        Debug.Log("Saving to: " + filePath);
-        using (StreamWriter sw = File.AppendText(filePath))
-        {
-            sw.WriteLine(json);
-        }
+        // saving data to CSV file
+        var filename = Application.dataPath + "/Database/ScoresCSV.csv";
+        TextWriter textWriter = new StreamWriter(filename,true);
+        textWriter.WriteLine(player.name + "," + player.score);
+        textWriter.Close();
     }
 }

@@ -33,11 +33,8 @@ public class accessJSON : MonoBehaviour
     {
         //wordList = JsonUtility.FromJson<List<Word>>(wordsJSON.text);
 
-
         wordListWrapper = JsonUtility.FromJson<WordListWrapper>("{\"words\":" + wordsJSON.text + "}");
         StateController.wordList = wordListWrapper.words; // access this word list in other classes
-        
-        //Debug.Log(StateController.languageChoice);
 
         
 

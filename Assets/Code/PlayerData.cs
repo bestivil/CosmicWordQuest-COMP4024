@@ -5,6 +5,13 @@ using UnityEngine;
 [System.Serializable]
 public class PlayerData
 {
-    public int score;
     public string name;
+    public int score;
+}
+
+
+[System.Serializable]
+public class PlayerDataList
+{
+    public PlayerData[] players;
 }
