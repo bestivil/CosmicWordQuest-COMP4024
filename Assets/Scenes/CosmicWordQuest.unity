@@ -800,7 +800,7 @@ GameObject:
   - component: {fileID: 281543607}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1180,7 +1180,7 @@ GameObject:
   - component: {fileID: 366015857}
   m_Layer: 0
   m_Name: Space
-  m_TagString: Untagged
+  m_TagString: Space
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
