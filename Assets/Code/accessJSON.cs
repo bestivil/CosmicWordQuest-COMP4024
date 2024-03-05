@@ -21,29 +21,18 @@ public class accessJSON : MonoBehaviour
         public string Italian;
     }
 
+
     [System.Serializable]
     public class WordListWrapper{
         public Word[] words;
     }
-
+    // Initalise instance of WordListWrapper
     public WordListWrapper wordListWrapper = new WordListWrapper();
     
-    
+    // Converts all the words in the JSON file to a list of words
     void Start()
     {
-        //wordList = JsonUtility.FromJson<List<Word>>(wordsJSON.text);
-
         wordListWrapper = JsonUtility.FromJson<WordListWrapper>("{\"words\":" + wordsJSON.text + "}");
-        StateController.wordList = wordListWrapper.words; // access this word list in other classes
-
-        
-
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        StateController.wordList = wordListWrapper.words;
     }
 }

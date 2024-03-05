@@ -5,7 +5,7 @@ public class ScoreDisplay : MonoBehaviour
 {
     void Start()
     {
-       
+       // Displays the score of the user during the high score scene.
         GameObject scoreTextObject = GameObject.FindGameObjectWithTag("Your_score");
         if (scoreTextObject != null)
         {

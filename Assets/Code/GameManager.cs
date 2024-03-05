@@ -25,44 +25,30 @@ public class GameManager : MonoBehaviour
 
     
 
+    // When the game starts, the GameManager is created
     void Awake()
     {
         
-        
-        
+        // Make sure the GameManager persists across scenes
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // Make sure the GameManager persists across scenes
+            DontDestroyOnLoad(gameObject); 
         }
+        // Ensure there is only one GameManager
         else if (Instance != this)
         {
-            Destroy(gameObject); // Ensure there is only one GameManager
+            Destroy(gameObject); 
         }
-
+    
+        // Calls the number randomiser
         getRandomArray();
 
-        
-
-        
-    }
-
-    void addDatabase()
-    {
-        // Add the user's name and score to the database
-    }
-
-    public void setNames(string name)
-    {
-        player.name = name;
-        SaveToFile();
-        
     }
 
     public void LevelCompleted()
     {
         level++;
-
 
         if (level >= 6)
         {
@@ -73,26 +59,20 @@ public class GameManager : MonoBehaviour
             }
             player.score = liveScore;
 
-        
-
-            
             FinalScoreDialog();
         }
+
         else
         {
             AdjustLevelTiming();
             getRandomArray();
             LoadCurrentScene();
         }
-
-        
     }
-
     
-
+    // For every level, the total time is reduced by 5 seconds, so 30,25,20 etc.
     void AdjustLevelTiming()
     {
-        
         currentLevelTime = Mathf.Max(5, currentLevelTime - 5);
     }
 
@@ -104,26 +84,22 @@ public class GameManager : MonoBehaviour
 
     void FinalScoreDialog()
     {
-       
         SceneManager.LoadScene("HighScoreScreen");
     }
 
     public void LoadLeaderboard()
     {
-        
         SceneManager.LoadScene("Leaderboard");
-        
     }
 
-    //generates a random array of words to pick from the word list
-    //want to make sure they are unique
+
     public void getRandomArray()
     {
         List<int> randIntArray = new List<int>();
         while(randIntArray.Count < 5){
             var uniqueRandom = Random.Range(0,150);
             
-            // this is to make sure the number we generate is not already inside of this array
+            // ensures number generated aren't repeated
             while(randIntArray.Contains(uniqueRandom)){
                 uniqueRandom = Random.Range(0,150);
             }
@@ -135,7 +111,15 @@ public class GameManager : MonoBehaviour
         //it is exclusive for array Length as being max value
         correctAnswer = randomNumbersArray[Random.Range(0, randomNumbersArray.Length)];
     }
-    
+
+    // On HighScore screen, sets the player's name, then automatically saved to the CSV file
+    public void setNames(string name)
+    {
+        player.name = name;
+        SaveToFile();
+        
+    }
+    // opens the csv, runs the stream writer to save the data
     void SaveToFile()
     {
         // saving data to CSV file

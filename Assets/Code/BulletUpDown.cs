@@ -7,6 +7,7 @@ public class MoveUpwards : MonoBehaviour
     public float duration = 5f; // Duration of the movement
 
 
+    // On space key press, move the object upwards
     void Update()
     {
     
@@ -16,6 +17,7 @@ public class MoveUpwards : MonoBehaviour
         }
     }
 
+    // Coroutine to move the bullet upwards
     IEnumerator MoveUp(float time)
     {
         float elapsedTime = 0;

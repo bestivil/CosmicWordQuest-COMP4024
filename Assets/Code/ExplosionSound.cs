@@ -9,7 +9,6 @@ public class ExplosionSound : MonoBehaviour
     void Start()
     {
         audioSource = gameObject.GetComponent<AudioSource>();
-
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -17,7 +16,6 @@ public class ExplosionSound : MonoBehaviour
         if (collision.gameObject)
         {
             audioSource.PlayOneShot(clip);
-
         }
     }
 
