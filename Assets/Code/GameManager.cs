@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     
     public int level = 1;
-    public float currentLevelTime = 10f; // Default timing for the level
+    public float currentLevelTime = 30f; // Default timing for the level
     private GameObject usernameDialogObject;
 
     private string nameUser;
@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
         level++;
 
 
-        if (level >= 11)
+        if (level >= 6)
         {
             GameObject scoreTextObject = GameObject.FindGameObjectWithTag("ScoreText");
             if (scoreTextObject != null)
@@ -94,10 +94,10 @@ public class GameManager : MonoBehaviour
     void AdjustLevelTiming()
     {
         
-        currentLevelTime = Mathf.Max(5, currentLevelTime - 0);
+        currentLevelTime = Mathf.Max(5, currentLevelTime - 5);
     }
 
-    void LoadCurrentScene()
+    public void LoadCurrentScene()
     {
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.name);
@@ -118,7 +118,7 @@ public class GameManager : MonoBehaviour
 
     //generates a random array of words to pick from the word list
     //want to make sure they are unique
-    void getRandomArray()
+    public void getRandomArray()
     {
         List<int> randIntArray = new List<int>();
         while(randIntArray.Count < 5){
