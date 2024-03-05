@@ -26,6 +26,8 @@ TagManager:
   - Planet5Text
   - SpaceshipWord
   - music
+  - Bullet
+  - Space
   layers:
   - Default
   - TransparentFX
