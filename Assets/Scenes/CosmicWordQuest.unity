@@ -663,6 +663,7 @@ GameObject:
   - component: {fileID: 281287704}
   - component: {fileID: 281287703}
   - component: {fileID: 281287705}
+  - component: {fileID: 281287706}
   m_Layer: 0
   m_Name: Red-Planet-1
   m_TagString: Planet1
@@ -772,6 +773,21 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 5.12
+--- !u!114 &281287706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281287702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e014aeac029167d40bcb3141e10631bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionSprite: {fileID: 21300004, guid: c8260d15cb31d3d49a251f7cdb4d1777, type: 3}
+  explosionDuration: 1
+  explosionSizeMultiplier: 2
 --- !u!1 &281543596
 GameObject:
   m_ObjectHideFlags: 0
@@ -2079,6 +2095,7 @@ GameObject:
   - component: {fileID: 569958363}
   - component: {fileID: 569958362}
   - component: {fileID: 569958364}
+  - component: {fileID: 569958365}
   m_Layer: 0
   m_Name: earth-like
   m_TagString: Planet2
@@ -2188,6 +2205,21 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 5.12
+--- !u!114 &569958365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569958361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e014aeac029167d40bcb3141e10631bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionSprite: {fileID: 21300004, guid: c8260d15cb31d3d49a251f7cdb4d1777, type: 3}
+  explosionDuration: 1
+  explosionSizeMultiplier: 2
 --- !u!1 &687978354
 GameObject:
   m_ObjectHideFlags: 0
@@ -2642,6 +2674,7 @@ GameObject:
   - component: {fileID: 1432128044}
   - component: {fileID: 1432128043}
   - component: {fileID: 1432128045}
+  - component: {fileID: 1432128046}
   m_Layer: 0
   m_Name: white-dwarf-star
   m_TagString: Planet3
@@ -2751,6 +2784,21 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 5.12
+--- !u!114 &1432128046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432128042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e014aeac029167d40bcb3141e10631bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionSprite: {fileID: 21300004, guid: c8260d15cb31d3d49a251f7cdb4d1777, type: 3}
+  explosionDuration: 1
+  explosionSizeMultiplier: 2
 --- !u!1 &1474556367
 GameObject:
   m_ObjectHideFlags: 0
@@ -2846,6 +2894,7 @@ GameObject:
   - component: {fileID: 1523340758}
   - component: {fileID: 1523340757}
   - component: {fileID: 1523340759}
+  - component: {fileID: 1523340760}
   m_Layer: 0
   m_Name: Sand-Planet (1)
   m_TagString: Planet5
@@ -2955,6 +3004,21 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 5.12
+--- !u!114 &1523340760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523340756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e014aeac029167d40bcb3141e10631bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionSprite: {fileID: 21300004, guid: c8260d15cb31d3d49a251f7cdb4d1777, type: 3}
+  explosionDuration: 1
+  explosionSizeMultiplier: 2
 --- !u!1 &1542512885
 GameObject:
   m_ObjectHideFlags: 0
@@ -3317,6 +3381,7 @@ GameObject:
   - component: {fileID: 1736142031}
   - component: {fileID: 1736142030}
   - component: {fileID: 1736142032}
+  - component: {fileID: 1736142033}
   m_Layer: 0
   m_Name: Ice-Planet
   m_TagString: Planet4
@@ -3426,6 +3491,21 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 5.12
+--- !u!114 &1736142033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736142029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e014aeac029167d40bcb3141e10631bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionSprite: {fileID: 21300004, guid: c8260d15cb31d3d49a251f7cdb4d1777, type: 3}
+  explosionDuration: 1
+  explosionSizeMultiplier: 2
 --- !u!1 &1751144933
 GameObject:
   m_ObjectHideFlags: 0
