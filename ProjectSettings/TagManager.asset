@@ -28,6 +28,8 @@ TagManager:
   - music
   - Bullet
   - Space
+  - TutorialButton
+  - QuitButton
   layers:
   - Default
   - TransparentFX
