@@ -5,18 +5,18 @@ using UnityEngine;
 public class Explosion : MonoBehaviour
 {
     public Sprite explosionSprite;
-    public float explosionDuration = 1.0f;
-    public float explosionSizeMultiplier = 2.0f; // Adjustable size multiplier
+    public float explosionDuration = 1.0f; //Duration of explosion relative to original size
+    public float explosionSizeMultiplier = 2.0f; // Size of explosion relative to original size
     private Sprite originalSprite;
     private SpriteRenderer spriteRenderer;
 
-    // Start is called before the first frame update
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         originalSprite = spriteRenderer.sprite;
     }
 
+    // Check if the object has collided with a bullet
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Bullet"))
@@ -25,6 +25,7 @@ public class Explosion : MonoBehaviour
         }
     }
 
+    // Transforms the planet into an explosion and reverts it back to its original state
     IEnumerator ExplodeAndRevert()
     {
         // Store the original scale
@@ -41,7 +42,6 @@ public class Explosion : MonoBehaviour
         spriteRenderer.sprite = originalSprite;
         transform.localScale = originalScale;
 
-        // Optionally, you can destroy the GameObject after the explosion
-        // Destroy(gameObject);
+       
     }
 }

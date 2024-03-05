@@ -9,7 +9,6 @@ public class EnterName : MonoBehaviour
 
     void Start()
     {
- 
         if (inputField == null)
         {
             GameObject usernameDialogObject = GameObject.FindGameObjectWithTag("input");
@@ -19,13 +18,11 @@ public class EnterName : MonoBehaviour
             }
         }
 
-        
         if (inputField != null)
         {
             inputField.onEndEdit.AddListener(delegate { CheckEnterPress(inputField.text); });
         }
     }
-
     private void CheckEnterPress(string inputValue)
     {
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter) || inputField.isFocused)

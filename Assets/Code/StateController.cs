@@ -22,8 +22,4 @@ public class StateController : MonoBehaviour
         randomNumbersArray = randIntArray.ToArray();
         correctAnswer = randomNumbersArray[Random.Range(0, randomNumbersArray.Length)];
     }
-
-
-
-
 }

@@ -8,9 +8,6 @@ public class TimerLv1 : MonoBehaviour
     private Text levelText; 
     private float timer;
     
-
-    
-
     void Start()
     {
 
