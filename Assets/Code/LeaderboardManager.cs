@@ -4,6 +4,7 @@ using UnityEngine;
 using System;
 using System.Linq;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LeaderboardManager : MonoBehaviour
 {
@@ -42,6 +43,8 @@ public class LeaderboardManager : MonoBehaviour
         
         DisplayTopScores(sortedList);
 
+        StartCoroutine(ReloadSceneEvery5Seconds());
+
     }
 
     void InitHighScoreText(){
@@ -68,13 +71,21 @@ public class LeaderboardManager : MonoBehaviour
                 break; //we cant go further in the highscoreTexts array, but i < listLength is still set
                 // as that list could have less than 5 elements
             }
-            Debug.Log(listLength-1-i);
             string name = sortedList[listLength-1-i].name; // take from the end of the array
             int score = sortedList[listLength-1-i].score;
             int currentPosition = i+1;
 
             highscoreTexts[i].GetComponent<Text>().text = currentPosition.ToString() + ". Name = " 
-                + name + "; Score = " +score.ToString();
+                + name + "; Score = " + score.ToString();
+        }
+    }
+
+     IEnumerator ReloadSceneEvery5Seconds()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(5);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }
