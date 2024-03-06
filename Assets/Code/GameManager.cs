@@ -157,9 +157,24 @@ public class GameManager : MonoBehaviour
     void SaveToFile()
     {
         // saving data to CSV file
-        var filename = Application.dataPath + "/Database/ScoresCSV.csv";
-        TextWriter textWriter = new StreamWriter(filename,true);
-        textWriter.WriteLine(player.name + "," + player.score);
-        textWriter.Close();
+        var filename = Application.persistentDataPath + "/ScoresCSV.csv";
+        
+        // Check if file exists
+        if (!File.Exists(filename))
+        {
+            // If file doesn't exist, create it
+            using (StreamWriter sw = File.CreateText(filename))
+            {
+                // Write headers if needed
+                sw.WriteLine("name,score");
+                sw.WriteLine("Lucas,1");
+            }
+
+        }
+        // Append new data to the existing file
+        using (StreamWriter sw = File.AppendText(filename))
+        {
+            sw.WriteLine(player.name + "," + player.score);
+        }
     }
 }
