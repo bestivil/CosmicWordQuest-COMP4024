@@ -65,19 +65,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Tests/TestsPlay/StartMenuTests/TutorialButtonExists.cs" />
-    <Compile Include="Assets/Tests/TestsPlay/Planet1Exists.cs" />
     <Compile Include="Assets/Tests/TestsPlay/BackButtonExists.cs" />
     <Compile Include="Assets/Tests/TestsPlay/spaceshipOutbound.cs" />
-    <Compile Include="Assets/Tests/TestsPlay/Planet5Exists.cs" />
-    <Compile Include="Assets/Tests/TestsPlay/Planet2Exists.cs" />
     <Compile Include="Assets/Tests/TestsPlay/LeaderboardButtonExists.cs" />
+    <Compile Include="Assets/Tests/TestsPlay/Planet2exists.cs" />
     <Compile Include="Assets/Tests/TestsPlay/StartMenuTests/StartButtonExists.cs" />
+    <Compile Include="Assets/Tests/TestsPlay/Planet1exists.cs" />
     <Compile Include="Assets/Tests/TestsPlay/SpaceshipTests.cs" />
+    <Compile Include="Assets/Tests/TestsPlay/Planet4exists.cs" />
+    <Compile Include="Assets/Tests/TestsPlay/Planet5exists.cs" />
     <Compile Include="Assets/Tests/TestsPlay/SpaceshipExists.cs" />
     <Compile Include="Assets/Tests/TestsPlay/StartMenuTests/QuitButtonExists.cs" />
     <Compile Include="Assets/Tests/TestsPlay/SpaceExist.cs" />
     <Compile Include="Assets/Tests/TestsPlay/Bullet-x-cord.cs" />
-    <Compile Include="Assets/Tests/TestsPlay/Planet4Exists.cs" />
     <Compile Include="Assets/Tests/TestsPlay/BulletExist.cs" />
     <Compile Include="Assets/Tests/TestsPlay/Planet3Exists.cs" />
   </ItemGroup>
