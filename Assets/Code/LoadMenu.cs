@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class LoadMenu : MonoBehaviour
 {
+    /*
     void Update()
     {
         if (Input.GetMouseButtonDown(0)) // Check if the left mouse button was pressed
@@ -13,6 +14,14 @@ public class LoadMenu : MonoBehaviour
                 SceneManager.LoadScene("StartScreen"); // Load the start menu
             }
         }
+    }
+    */
+
+    public void OnClick(){
+        //make sure the scores are reset
+        GameManager.Instance.scoreUser = "0";
+        GameManager.Instance.liveScore = 0;
+        SceneManager.LoadScene("StartScreen");
     }
 }
 
