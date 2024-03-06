@@ -8,7 +8,7 @@ public class StateController : MonoBehaviour
 
     public static StateController Instance;
 
-    public static accessJSON.Word[] wordList; // storing the word list for other classes
+    public static AccessJSON.Word[] wordList; // storing the word list for other classes
 
     public static int[] randomNumbersArray;
     public static int correctAnswer;

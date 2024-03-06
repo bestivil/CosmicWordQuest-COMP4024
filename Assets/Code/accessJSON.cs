@@ -1,17 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class accessJSON : MonoBehaviour
-{
-    // Start is called before the first frame update
-    
-    
-    private List<int> randIntArray = new List<int>();
+/// <summary>
+/// Class used to read the JSON word data of different translations
+/// </summary>
+public class AccessJSON : MonoBehaviour
+{   
     public TextAsset wordsJSON;
-
-    public static int correctAnswer;
-    public static int[] randomNumbersArray;
     
     [System.Serializable]
     public class Word{
@@ -21,15 +15,19 @@ public class accessJSON : MonoBehaviour
         public string Italian;
     }
 
-
+    /// <summary>
+    /// Wrapper class around the words array, used for reading in data
+    /// </summary>
     [System.Serializable]
     public class WordListWrapper{
         public Word[] words;
     }
     // Initalise instance of WordListWrapper
-    public WordListWrapper wordListWrapper = new WordListWrapper();
+    public WordListWrapper wordListWrapper = new();
     
-    // Converts all the words in the JSON file to a list of words
+    /// <summary>
+    /// Converts all the words in the JSON file to a list of words stored in StateController
+    /// </summary>
     void Start()
     {
         wordListWrapper = JsonUtility.FromJson<WordListWrapper>("{\"words\":" + wordsJSON.text + "}");

@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-// creates a PlayerData class that stores the name and score of the player
+/// <summary>
+/// Class that stores the name and score of the player
+/// </summary>
 [System.Serializable]
 public class PlayerData
 {
@@ -11,7 +9,9 @@ public class PlayerData
 }
 
 
-// creates a PlayerDataList class that stores an array of PlayerData
+/// <summary>
+/// Class that stores an array of PlayerData used to read from CSV
+/// </summary>
 [System.Serializable]
 public class PlayerDataList
 {

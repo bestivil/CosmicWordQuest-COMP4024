@@ -2324,7 +2324,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 573627792}
         m_TargetAssemblyTypeName: StartGame, GameLogic
-        m_MethodName: onClick
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

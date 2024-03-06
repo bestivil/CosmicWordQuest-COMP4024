@@ -1,13 +1,18 @@
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Class responsible for bullet movement
+/// </summary>
 public class MoveUpwards : MonoBehaviour
 {
     public float distance = 50f; // Distance to move upwards
     public float duration = 5f; // Duration of the movement
 
 
-    // On space key press, move the object upwards
+    /// <summary>
+    /// On space key press, move the object upwards
+    /// </summary>
     void Update()
     {
     
@@ -17,7 +22,11 @@ public class MoveUpwards : MonoBehaviour
         }
     }
 
-    // Coroutine to move the bullet upwards
+    /// <summary>
+    /// Coroutine to move the bullet upwards
+    /// </summary>
+    /// <param name="time">duration of the bullet existance</param>
+    /// <returns>returns an enumerator for coroutine</returns>
     IEnumerator MoveUp(float time)
     {
         float elapsedTime = 0;
@@ -26,7 +35,7 @@ public class MoveUpwards : MonoBehaviour
 
         while (elapsedTime < time)
         {
-            transform.position = Vector3.Lerp(startingPosition, targetPosition, (elapsedTime / time));
+            transform.position = Vector3.Lerp(startingPosition, targetPosition, elapsedTime / time);
             elapsedTime += Time.deltaTime;
             yield return null;
         }
