@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets/Code/BulletUpDown.cs" />
     <Compile Include="Assets/Code/SpaceshipOutsideView.cs" />
+    <Compile Include="Assets/Code/Quit.cs" />
     <Compile Include="Assets/Code/PlanetLangSetup.cs" />
     <Compile Include="Assets/Code/EnterName.cs" />
     <Compile Include="Assets/Code/ExplosionSound.cs" />
