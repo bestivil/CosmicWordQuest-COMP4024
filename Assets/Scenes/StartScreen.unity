@@ -641,7 +641,7 @@ GameObject:
   - component: {fileID: 159450800}
   - component: {fileID: 159450799}
   m_Layer: 5
-  m_Name: Button
+  m_Name: QuitButton
   m_TagString: QuitButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -710,7 +710,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 159450800}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1450858344}
+        m_TargetAssemblyTypeName: Quit, GameLogic
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &159450800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3147,6 +3159,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 417096, guid: e00b5ba5cc33edb4ca82f2d64250a907, type: 3}
   m_PrefabInstance: {fileID: 1407626194}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1450858343
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1450858345}
+  - component: {fileID: 1450858344}
+  m_Layer: 0
+  m_Name: QuitSceneLoader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1450858344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450858343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12899e6954eeb4e029dedbe956e69732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1450858345
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450858343}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.1103536, y: 0.51760644, z: 0.0013540701}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1497086243
 GameObject:
   m_ObjectHideFlags: 0
@@ -4167,3 +4223,4 @@ SceneRoots:
   - {fileID: 313892646}
   - {fileID: 772082003}
   - {fileID: 430182414}
+  - {fileID: 1450858345}
