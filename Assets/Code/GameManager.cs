@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
     public int correctAnswer = 0;
     public PlayerData player = new PlayerData();
 
+    private Text levelText; 
+
     
 
     // When the game starts, the GameManager is created
@@ -44,6 +46,19 @@ public class GameManager : MonoBehaviour
         // Calls the number randomiser
         getRandomArray();
 
+        GameObject levelObject = GameObject.FindGameObjectWithTag("CurrentLevel");
+        GameObject timerObject = GameObject.FindGameObjectWithTag("Timer");
+
+        if (levelObject != null && timerObject != null)
+        {
+            levelText = levelObject.GetComponent<Text>();
+            levelText.text = "Level: " + GameManager.Instance.level;
+        } 
+
+        
+
+
+
     }
 
     public void LevelCompleted()
@@ -53,6 +68,7 @@ public class GameManager : MonoBehaviour
         if (level >= 6)
         {
             GameObject scoreTextObject = GameObject.FindGameObjectWithTag("ScoreText");
+            Debug.Log("Score Text Object: " + scoreTextObject);
             if (scoreTextObject != null)
             {
                 scoreUser = scoreTextObject.GetComponent<Text>().text;
