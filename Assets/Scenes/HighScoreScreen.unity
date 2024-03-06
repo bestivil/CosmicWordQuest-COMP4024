@@ -235,8 +235,8 @@ MonoBehaviour:
   randomNumbersArray: 
   correctAnswer: 0
   player:
-    score: 0
     name: 
+    score: 0
 --- !u!1 &267212398
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,7 +307,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Please enter your name to add your score to the leaderboard:'
+  m_Text: 'Please enter your name and click Enter to add your score to the leaderboard:'
 --- !u!222 &267212401
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -581,7 +581,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputField: {fileID: 0}
-  csvFile: {fileID: 4900000, guid: 0d1801e42f62f0b499ad0b33d0d574e2, type: 3}
 --- !u!225 &655024117
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -931,6 +930,18 @@ PrefabInstance:
     - target: {fileID: 753899770008723726, guid: 963cbbcf5fa5046ecb300a85e08a6632, type: 3}
       propertyPath: m_Name
       value: Space
+      objectReference: {fileID: 0}
+    - target: {fileID: 1856719552339214769, guid: 963cbbcf5fa5046ecb300a85e08a6632, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.3536
+      objectReference: {fileID: 0}
+    - target: {fileID: 1856719552339214769, guid: 963cbbcf5fa5046ecb300a85e08a6632, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.3536
+      objectReference: {fileID: 0}
+    - target: {fileID: 1856719552339214769, guid: 963cbbcf5fa5046ecb300a85e08a6632, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.3536
       objectReference: {fileID: 0}
     - target: {fileID: 1856719552339214769, guid: 963cbbcf5fa5046ecb300a85e08a6632, type: 3}
       propertyPath: m_LocalPosition.x

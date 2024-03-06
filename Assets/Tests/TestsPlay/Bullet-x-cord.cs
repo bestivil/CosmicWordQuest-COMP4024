@@ -3,10 +3,17 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
+/// <summary>
+/// Class responsible for testing that the bullet maintains the same x-coordinate while moving 
+/// </summary>
 public class BulletMovementTest : MonoBehaviour
 {
     private GameObject bullet;
     private float initialXPosition;
+
+/// <summary>
+/// Finds the object in game with the Bullet tag
+/// </summary>
 
     [SetUp]
     public void SetUp()
@@ -17,6 +24,10 @@ public class BulletMovementTest : MonoBehaviour
         bullet.transform.position = Vector3.zero;
 
     }
+
+/// <summary>
+/// Moves the bullet upwards and asserts whether the bullet has maintained the same x-coordinate
+/// </summary>
 
 [UnityTest]
 public IEnumerator BulletMaintainsSameXCoordinate()

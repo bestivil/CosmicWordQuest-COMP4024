@@ -3,17 +3,28 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
+/// <summary>
+/// Class responsible for testing the leaderboard button exists within view
+/// </summary>
+
 public class LeaderboardButtonExists : MonoBehaviour
 {
 private GameObject LeaderboardButton;
 
+/// <summary>
+/// Finds the object in game with the LeaderboardButton tag
+/// </summary>
+
     [SetUp]
     public void SetUp()
     {
-        // Assuming your button has the "leaderboardButton" tag
         LeaderboardButton = GameObject.FindWithTag("LeaderboardButton");
         Assert.IsNotNull(LeaderboardButton, "LeaderboardButton with tag 'LeaderboardButton' not found in the scene.");
     }
+
+/// <summary>
+/// Asserts that the leaderboard button exists within view of the camera 
+/// </summary>
 
     [UnityTest]
     public IEnumerator LeaderboardButtonIsWithinGameBounds()
@@ -23,6 +34,10 @@ private GameObject LeaderboardButton;
 
         yield return null;
     }
+
+    /// <summary>
+    /// In the test, make sure that the object targeted is within view of the Main Camera
+    /// </summary>
 
     bool IsVisibleByCamera()
     {

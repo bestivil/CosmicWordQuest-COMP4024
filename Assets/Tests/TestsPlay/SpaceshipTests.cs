@@ -3,35 +3,35 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
+/// <summary>
+/// Class responsible for testing that the spaceship moves as expected when transformed
+/// </summary>
+
 public class SpaceshipMovementTests : MonoBehaviour
 {
     private GameObject spaceship;
     private float initialXPosition;
 
+/// <summary>
+/// Finds the object in game with the Spaceship tag, and records the starting position
+/// </summary>
+
     [SetUp]
     public void SetUp()
     {
-        spaceship = new GameObject("Spaceship");
-        var controller = spaceship.AddComponent<SpaceshipLeftRight>(); // Your custom spaceship controller script
+        spaceship = GameObject.FindWithTag("Spaceship");
 
         spaceship.transform.position = Vector3.zero;
 
     }
 
-    [TearDown]
-    public void Teardown()
-    {
-        if (spaceship != null)
-        {
-            GameObject.Destroy(spaceship);
-        }
-    }
+/// <summary>
+/// Transforms the location of the spaceship and tests to see if movement is moved as expected
+/// </summary>
 
     [UnityTest]
     public IEnumerator SpaceshipMovementWithEnumeratorPasses()
-    {
-        
-        var spaceshipController = spaceship.GetComponent<SpaceshipLeftRight>();
+    {        
         spaceship.transform.Translate(Vector3.up * 5000f * Time.deltaTime);
 
         yield return null;
