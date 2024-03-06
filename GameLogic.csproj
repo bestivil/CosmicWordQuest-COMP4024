@@ -70,14 +70,13 @@
     <Compile Include="Assets/Code/StartGame.cs" />
     <Compile Include="Assets/Code/NameScene.cs" />
     <Compile Include="Assets/Code/SpaceshipLeftRight.cs" />
-    <Compile Include="Assets/Code/TimerLv1.cs" />
     <Compile Include="Assets/Code/CollisionScoring.cs" />
+    <Compile Include="Assets/Code/Timer.cs" />
     <Compile Include="Assets/Code/OutBounds.cs" />
     <Compile Include="Assets/Code/Explosion.cs" />
     <Compile Include="Assets/Code/accessJSON.cs" />
     <Compile Include="Assets/Code/GameManager.cs" />
     <Compile Include="Assets/Code/LoadMenu.cs" />
-    <Compile Include="Assets/Code/NewBehaviourScript.cs" />
     <Compile Include="Assets/Code/PlayerData.cs" />
     <Compile Include="Assets/Code/LoadLeaderboard.cs" />
     <Compile Include="Assets/Code/StateController.cs" />
