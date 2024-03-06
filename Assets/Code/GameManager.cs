@@ -1,33 +1,34 @@
-using System.Collections;
 using System.Collections.Generic;
-using System.Data;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.IO;
 
+/// <summary>
+/// Class responsible for storing game information and controlling the game
+/// </summary>
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     
     public int level = 1;
     public float currentLevelTime = 30f; // Default timing for the level
-    private GameObject usernameDialogObject;
 
-    private string nameUser;
-    public string scoreUser = "0";
+    public string scoreUser = "0"; // used for the text to be shown in scene
 
-    public int liveScore = 0;
+    public int liveScore = 0; //keeps the int value of score updated
 
     public int[] randomNumbersArray;
     public int correctAnswer = 0;
-    public PlayerData player = new PlayerData();
+    public PlayerData player = new();
 
     private Text levelText; 
 
     
 
-    // When the game starts, the GameManager is created
+    /// <summary>
+    /// When the game starts, the GameManager is created
+    /// </summary>
     void Awake()
     {
         
@@ -44,7 +45,7 @@ public class GameManager : MonoBehaviour
         }
     
         // Calls the number randomiser
-        getRandomArray();
+        GetRandomArray();
 
         GameObject levelObject = GameObject.FindGameObjectWithTag("CurrentLevel");
         GameObject timerObject = GameObject.FindGameObjectWithTag("Timer");
@@ -55,16 +56,16 @@ public class GameManager : MonoBehaviour
             levelText.text = "Level: " + GameManager.Instance.level;
         } 
 
-        
-
-
-
     }
 
+    /// <summary>
+    /// Called each time level is finished
+    /// </summary>
     public void LevelCompleted()
     {
         level++;
 
+        // if level is above 6, update user score data and 
         if (level >= 6)
         {
             GameObject scoreTextObject = GameObject.FindGameObjectWithTag("ScoreText");
@@ -78,40 +79,52 @@ public class GameManager : MonoBehaviour
             FinalScoreDialog();
         }
 
+        //adjusts time for new level, gets random words and reloads this scene
         else
         {
             AdjustLevelTiming();
-            getRandomArray();
+            GetRandomArray();
             LoadCurrentScene();
         }
     }
     
-    // For every level, the total time is reduced by 5 seconds, so 30,25,20 etc.
+    /// <summary>
+    /// For every level, the total time is reduced by 5 seconds, so 30,25,20 etc.
+    /// </summary>
     void AdjustLevelTiming()
     {
         currentLevelTime = Mathf.Max(5, currentLevelTime - 5);
     }
-
+    /// <summary>
+    /// reloads the scene
+    /// </summary>
     public void LoadCurrentScene()
     {
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.name);
     }
-
+    /// <summary>
+    /// load the HighScoreScreen scene
+    /// </summary>
     void FinalScoreDialog()
     {
         SceneManager.LoadScene("HighScoreScreen");
     }
-
+    /// <summary>
+    /// load Leaderboard scene if Leaderboard icon is pressed
+    /// </summary>
     public void LoadLeaderboard()
     {
         SceneManager.LoadScene("Leaderboard");
     }
 
-
-    public void getRandomArray()
+    /// <summary>
+    /// get a random array of unique indices that will then be used to index into the word list to get random words, 
+    /// and store correct answer index
+    /// </summary>
+    public void GetRandomArray()
     {
-        List<int> randIntArray = new List<int>();
+        List<int> randIntArray = new();
         while(randIntArray.Count < 5){
             var uniqueRandom = Random.Range(0,150);
             
@@ -128,14 +141,19 @@ public class GameManager : MonoBehaviour
         correctAnswer = randomNumbersArray[Random.Range(0, randomNumbersArray.Length)];
     }
 
-    // On HighScore screen, sets the player's name, then automatically saved to the CSV file
-    public void setNames(string name)
+    /// <summary>
+    /// On HighScore screen, sets the player's name, then automatically saved to the CSV file
+    /// </summary>
+    /// <param name="name">user name</param>
+    public void SetNames(string name)
     {
         player.name = name;
         SaveToFile();
         
     }
-    // opens the csv, runs the stream writer to save the data
+    /// <summary>
+    /// opens the CSV file, runs the stream writer to save the new data
+    /// </summary>
     void SaveToFile()
     {
         // saving data to CSV file

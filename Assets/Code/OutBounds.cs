@@ -1,16 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-
+/// <summary>
+/// Class responsible for re-stating a bullet after it is fired
+/// </summary>
 public class OutBounds : MonoBehaviour
 {
     private Vector2 startingPosition;
     private Camera mainCamera;
     private Transform spaceshipTransform;
-    private Vector3 offset = new Vector3(1.55f, -0.3f, 0f); 
+    private Vector3 offset = new(1.55f, -0.3f, 0f); 
 
+    /// <summary>
+    /// store the starting position and spaceshipTransform
+    /// </summary>
     void Start()
     {
         startingPosition = transform.position;
@@ -23,7 +25,9 @@ public class OutBounds : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+    /// <summary>
+    /// updates the bullet position
+    /// </summary>
     void Update()
     {
 
@@ -32,10 +36,14 @@ public class OutBounds : MonoBehaviour
             UpdatePositionAboveSpaceship();
         }
     }
+
+    /// <summary>
+    /// checks if the bullet is outside view, and brings it back if it is
+    /// </summary>
     void UpdatePositionAboveSpaceship()
     {
         Vector3 viewportPosition = mainCamera.WorldToViewportPoint(transform.position);
-        bool isOutsideView = (viewportPosition.x < 0 || viewportPosition.x > 1 || viewportPosition.y < 0 || viewportPosition.y > 1);
+        bool isOutsideView = viewportPosition.x < 0 || viewportPosition.x > 1 || viewportPosition.y < 0 || viewportPosition.y > 1;
 
         if (isOutsideView)
             {
@@ -43,4 +51,3 @@ public class OutBounds : MonoBehaviour
             }
     }
 }
-

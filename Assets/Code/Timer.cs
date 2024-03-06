@@ -1,6 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI; // Use UnityEngine.UI for the Text component
 
+/// <summary>
+/// Class responsible for keeping track of the time left in the current level 
+/// </summary>
 public class Timer : MonoBehaviour
 {
 
@@ -8,6 +11,9 @@ public class Timer : MonoBehaviour
     
     private float timer;
     
+    /// <summary>
+    /// Gets reference to timerText object
+    /// </summary>
     void Start()
     {
 
@@ -20,7 +26,10 @@ public class Timer : MonoBehaviour
         
         
     }
-
+    /// <summary>
+    /// updates the timer value and updates the timerText text
+    /// if timer runs out, makes a call to GameManager to update the level
+    /// </summary>
     void Update()
     {
         if (timer > 0)

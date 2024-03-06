@@ -1,12 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
+/// <summary>
+/// Class for letting user input their user name
+/// </summary>
 public class EnterName : MonoBehaviour
 {
     public InputField inputField; 
-
+    /// <summary>
+    /// sets up InputField member of this class
+    /// </summary>
     void Start()
     {
         if (inputField == null)
@@ -23,11 +26,15 @@ public class EnterName : MonoBehaviour
             inputField.onEndEdit.AddListener(delegate { CheckEnterPress(inputField.text); });
         }
     }
+    /// <summary>
+    /// Checks for user pressing Enter key and then stores the name and loads Leaderboad scene
+    /// </summary>
+    /// <param name="inputValue">user input text</param>
     private void CheckEnterPress(string inputValue)
     {
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter) || inputField.isFocused)
         {
-            GameManager.Instance.setNames(inputValue); 
+            GameManager.Instance.SetNames(inputValue); 
             GameManager.Instance.LoadLeaderboard();
         }
     }

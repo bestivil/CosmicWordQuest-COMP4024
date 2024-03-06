@@ -1,8 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
-
+/// <summary>
+/// Class responsible for taking care of 
+/// </summary>
 public class ScoreDisplay : MonoBehaviour
 {
+    /// <summary>
+    /// displays the current score to the scene
+    /// </summary>
     void Start()
     {
        // Displays the score of the user during the high score scene.
@@ -10,8 +15,7 @@ public class ScoreDisplay : MonoBehaviour
         if (scoreTextObject != null)
         {
            
-            Text scoreText = scoreTextObject.GetComponent<Text>();
-            if (scoreText != null)
+            if (scoreTextObject.TryGetComponent<Text>(out var scoreText))
             {
                 if (GameManager.Instance.scoreUser != "0")
                 {
