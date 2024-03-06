@@ -3,16 +3,26 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
+/// <summary>
+/// Class responsible for testing the start button exists within view on start menu
+/// </summary>
 public class StartButtonExists : MonoBehaviour
 {
 private GameObject StartButton;
 
+/// <summary>
+/// Finds the object in game with the StartButton tag
+/// </summary>
+
     [SetUp]
     public void SetUp()
     {
-        // Assuming your button has the "StartButton" tag
         StartButton = GameObject.FindWithTag("StartButton");
     }
+
+/// <summary>
+/// Asserts that the start button exists
+/// </summary>
 
     [UnityTest]
     public IEnumerator StartButtonIsWithinGameBounds()

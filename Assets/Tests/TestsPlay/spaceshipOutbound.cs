@@ -3,11 +3,18 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
+/// <summary>
+/// Class responsible for testing that the spaceship is not out of bounds
+/// </summary>
+
 public class OutBoundsTest
 {
     private GameObject spaceship;
     private Vector3 startingPosition;
 
+/// <summary>
+/// Finds the object in game with the Spaceship tag
+/// </summary>
 
     [SetUp]
     public void SetUp()
@@ -17,6 +24,10 @@ public class OutBoundsTest
         startingPosition = spaceship.transform.position;
 
     }
+
+/// <summary>
+/// Asserts that the spaceship exists within view of the camera 
+/// </summary>
 
     [UnityTest]
     public IEnumerator SpaceshipDoesNotGoOutOfBounds()
@@ -28,6 +39,10 @@ public class OutBoundsTest
 
         yield return null;
     }
+
+    /// <summary>
+    /// In the test, make sure that the object targeted is within view of the Main Camera
+    /// </summary>
 
     bool IsVisibleByCamera()
     {

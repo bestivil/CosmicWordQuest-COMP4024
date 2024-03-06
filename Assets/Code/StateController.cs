@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Class responsible for choosing the words shown to the user during the game
+/// </summary>
 public class StateController : MonoBehaviour
 {
     public static string languageChoice;
@@ -13,6 +16,9 @@ public class StateController : MonoBehaviour
     public static int[] randomNumbersArray;
     public static int correctAnswer;
 
+/// <summary>
+/// gets the words used and chooses the words via random range
+/// </summary>
     void Start()
     {
         List<int> randIntArray = new List<int>();

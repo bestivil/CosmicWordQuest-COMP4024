@@ -3,15 +3,27 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
+/// <summary>
+/// Class responsible for testing the bullet button exists within view
+/// </summary>
+
 public class BulletExists
 {
     private GameObject bullet;
+
+/// <summary>
+/// Finds the object in game with the Bullet tag
+/// </summary>
 
     [SetUp]
     public void SetUp()
     {
         bullet = GameObject.FindWithTag("Bullet");
     }
+
+/// <summary>
+/// Asserts that the bullet exists within view of the camera 
+/// </summary>
 
     [UnityTest]
     public IEnumerator BulletVisible()
@@ -22,6 +34,9 @@ public class BulletExists
         yield return null;
     }
 
+    /// <summary>
+    /// In the test, make sure that the object targeted is within view of the Main Camera
+    /// </summary>
     bool IsVisibleByCamera()
     {
         // Get the object's position in the viewport

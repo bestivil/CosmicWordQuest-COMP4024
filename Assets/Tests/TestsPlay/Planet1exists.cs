@@ -3,17 +3,28 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-public class Planet1exists : MonoBehaviour
+/// <summary>
+/// Class responsible for testing Planet1 exists within view
+/// </summary>
+
+public class Planet1Exists : MonoBehaviour
 {
       private GameObject planet;
+
+/// <summary>
+/// Finds the object in game with the Planet1 tag
+/// </summary>
 
     [SetUp]
     public void SetUp()
     {
-        // Assuming your planet has the "Planet1" tag
         planet = GameObject.FindWithTag("Planet1");
         Assert.IsNotNull(planet, "Planet with tag 'Planet1' not found in the scene.");
     }
+
+/// <summary>
+/// Asserts that the Planet1 exists within view of the camera 
+/// </summary>
 
     [UnityTest]
     public IEnumerator PlanetIsWithinGameBounds()
@@ -23,6 +34,10 @@ public class Planet1exists : MonoBehaviour
 
         yield return null;
     }
+
+    /// <summary>
+    /// In the test, make sure that the object targeted is within view of the Main Camera
+    /// </summary>
 
     bool IsVisibleByCamera()
     {
