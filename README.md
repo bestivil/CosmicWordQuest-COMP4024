@@ -36,7 +36,8 @@ Rodion Rasulov
 2. In Unity Hub, 'Add project from disk' to add this project
 3. Once opened, `File` -> `Re-import all` to reload the project, clear cache and import all assets for editor mode to work smoothly.
 
-You can also play this game without unity through the already built version in the MVP folder of this page
+You can also play this game without unity through the already built versions inside the Releases section. 
+- The releases contain games for both Windows and Mac
 
 ### GitHub structure
 
